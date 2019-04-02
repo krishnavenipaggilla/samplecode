@@ -1,0 +1,10 @@
+TempMemberbutton=//button[contains(text(),'Create Temp Member')]
+TempMemberYesbutton=//button[text()='Yes']
+TempMemberNobutton=//button[text()='No']
+TempMemberCreatebutton=//button[text()='Create']
+TempMemberCancelbutton=//button[text()='Cancel']
+TempOverviewPage=//a[text()='Overview']
+TempCaseID=(//label[contains(text(),'Case ID')]//parent::div//child::span)[1]
+TempCaseStatus=(//label[contains(text(),'Case Status')]//parent::div//child::span)[1]
+TempSearchPage=//a[text()='Search']
+

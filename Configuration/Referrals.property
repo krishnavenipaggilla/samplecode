@@ -1,0 +1,64 @@
+ReferralsLeftNav=//a//span[contains(text(),'Interventions')]
+AddIntervention=//button//i[@class='fa fa-plus-circle ng-star-inserted']
+Interventiondropdown=//label[contains(text(),'Select Intervention')]//following-sibling::p-dropdown
+ReferralasIntervention=//label[contains(text(),'Select Intervention')]//following-sibling::p-dropdown//span[text()='Referral']
+row=//div[@class='ui-table ui-widget ui-table-responsive']//tr
+nextdropdowns=//nm-combobox[@class='ng-untouched ng-pristine ng-star-inserted ng-invalid']//label[@class='required ng-star-inserted']
+columnNames=//p-header[contains(text(),'Notes')]//parent::div//following-sibling::p-table//div//div//table//th
+AllReferralvalues=//div//nm-element
+ReferralType=//label[contains(text(),'Referral Type')]//following-sibling::p-dropdown
+BehavioralHealth=//label[contains(text(),'Referral Type')]//following-sibling::p-dropdown//span[contains(text(),'Behavioral Health')]
+GoalCheckbox=(//span[normalize-space()='Goal']//preceding::th//parent::tr//parent::thead//following-sibling::tbody//following::td//div[@class='ui-chkbox-box ui-widget ui-state-default'])[1]
+GoalValue=(//span[normalize-space()='Goal']//preceding::th//parent::tr//parent::thead//following-sibling::tbody//following::td)[2]
+Submit=//button[normalize-space()='Submit']
+AssignedTovalue=//div//label[contains(text(),'Assigned To')]//following-sibling::p-dropdown
+ReferralTypeValue=//div//label[contains(text(),'Referral Type')]//following-sibling::p-dropdown
+ReferralReasonValue=//div//label[contains(text(),'Referral Reason')]//following-sibling::p-dropdown
+ActionTakenValue=//div//label[contains(text(),'Action Taken')]//following-sibling::p-dropdown
+ActionProposedValue=//div//label[contains(text(),'Action Proposed')]//following-sibling::p-dropdown
+StatusValue=//div//label[contains(text(),'Status')]//following-sibling::p-dropdown
+StatusReasonValue=//div//label[contains(text(),'Status Reason')]//following-sibling::p-dropdown
+DueDateValue=//div//label[contains(text(),'Next Action Due Date')]//following-sibling::p-calendar//input
+NoteValue=//textarea[@id='note']
+PermissionValue=//div//label[contains(text(),'Permission')]//following-sibling::p-dropdown
+Description=(//span[contains(text(),'Description')]//ancestor::thead//following-sibling::tbody//td//span)[1]
+GridAssignedTo=(//span[contains(text(),'Assigned To')]//ancestor::thead//following-sibling::tbody//td//span)[5]
+EditReferral=(//i[@class='fa fa-pencil-square-o ng-star-inserted'])[1]
+NoteGridHeader=//p-header[normalize-space()='Notes']
+AddNote=//i[@class='fa fa-plus-circle ng-star-inserted']
+AddnnoteHeader=//p-header[contains(text(),'Add Notes')]
+Back=//button[normalize-space()='Back']
+CarePlanLeftNav=//a//span[contains(text(),'Care Plan')]
+SecondaryRow=//a//i[@class='fa fa-fw fa-chevron-circle-right ui-row-toggler']
+SecondaryRowEdit=(//i[@class='fa fa-pencil-square-o ng-star-inserted'])[3]
+EditReferralHeader=//h2[contains(text(),'Edit Referral')]
+HistoryGridHeader=//p-header[normalize-space()='History']
+Historycolumn=//p-header[contains(text(),'History')]//parent::div//following-sibling::p-table//div//div//table//th
+HistoryOwner=(//p-header[contains(text(),'History')]//parent::div//following-sibling::p-table//ancestor::thead//following-sibling::tbody//td)[2]
+HistoryActionTaken=(//p-header[contains(text(),'History')]//parent::div//following-sibling::p-table//ancestor::thead//following-sibling::tbody//td)[3]
+HistoryProposedvalue=(//p-header[contains(text(),'History')]//parent::div//following-sibling::p-table//ancestor::thead//following-sibling::tbody//td)[4]
+HistoryDateValue=(//p-header[contains(text(),'History')]//parent::div//following-sibling::p-table//ancestor::thead//following-sibling::tbody//td)[5]
+SecDescription=(//span[contains(text(),'Description')]//ancestor::thead//following-sibling::tbody/tr[2]/td//span)[1]
+SecGridAssignedTo=(//span[contains(text(),'Description')]//ancestor::thead//following-sibling::tbody/tr[2]/td//span)[7]
+RefTypenonedit=//div//label[contains(text(),'Referral Type')]//following-sibling::p
+RefreasonNonedit=//div//label[contains(text(),'Referral Reason')]//following-sibling::p
+CarePlanleftnav=//a//span[contains(text(),'Care Plan')]
+AddGoal=(//button//span//i[@class='fa fa-plus-circle ng-star-inserted'])[3]
+
+# Referral Activity
+MemberActionLeftNav=//a//span[contains(text(),'Member Action Center')]
+ReferralActivity=//span[@title='Referral']
+RefDueDate=(//span[@title='Referral']//following::td)[3]
+RefAssignedTo=(//span[@title='Referral']//following::td)[5]
+RefStatus=(//span[@title='Referral']//following::td)[1]
+EditRefActivity=//td//span[contains(text(),'Referral')]//following::a[@class='fa fa-pencil-square-o pull-right ng-star-inserted']
+ActivityOpen=(//h2[contains(text(),'Intro & Permissions')])[2]
+SaveforLaterButton=//button[text()='Save for Later']
+SaveActivityButton=//button[text()='Save/End Activity']
+ActivityHeader=//p-header[normalize-space()='Activity']
+CaseID=//label[contains(text(),'Case ID')]//following-sibling::div//span
+ActivityDashBaord=//a[normalize-space()='Activity Dashboard']
+FFwdButton=(//a//span[@class='fa fa-step-forward'])[1]
+ActivityListHeader=//p-header[normalize-space()='Activity List']
+RefActivityStatus=//label[text()='Status']//following-sibling::div//span
+RefActivGrid=((//span[@title='Referral'])[4]//following::td)[1]

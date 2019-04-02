@@ -1,0 +1,10 @@
+ImmunizationLeftNav=//a//span[contains(text(),'Immunizations')]
+ImmunizationHeader=//caption[contains(text(),'Immunizations')]
+AddImmunizationbutton=//button[contains(.,'Add Immunization')]
+UpdateImmunization=//tr[1]//button[@title ='Edit Immunization' and @type = 'button']
+ImmunizationnamedropId=(//p-dropdown/div/label)[1]
+RefusedId=(//p-dropdown/div/label)[2]
+ReasonforRefusalID=(//p-dropdown/div/label)[3]
+#FacilityNameID=//div//label[contains(text(),'Provider/Facility Name')]//following-sibling::p
+FacilityNameID=//label[contains(text(),'Provider/Facility Name')]/ancestor::nm-input/p
+DateAdministered=//p-calendar/span/input

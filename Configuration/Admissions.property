@@ -1,0 +1,32 @@
+GridHeader= //caption[contains(text(),'Admissions')]
+AddAdmissions= //nm-button-group//button[text()]
+GridHeaderVerify= //*[@id="addAdmissionsTile"]/div[1]//h2
+TypeDropdown= //p-dropdown//div[2]
+VerifyNotificationDate= (//p-calendar/span/input)[1]
+ProviderName= (//nm-input-label/label)[3]
+OpenImage= //span/nm-action-dropdown/div/button
+EditAdmission= //span/nm-button/button
+EditGridHeader= //div[1]//h2
+Edit_ActualDischargeDate= (//p-calendar/span/input)[7]
+AdmissionView= //p-table/div//table/tbody/tr[1]/td/a
+AdmissionAdmitDate= //p-table//div//tr/td[3]
+AdmissionActualDischargeDate= //p-table//div//tr/td[6]
+DaysInHospital= //p-table//div//tr/td[4]
+
+//**********Admissions SUBACTIVITY **********//
+AdmissionViewFromActivity = //div[@class='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//h2[contains(text(),'Admissions')]//ancestor::p-accordiontab//div[@ role = 'tabpanel']//table/tbody/tr[1]/td/a
+
+EditAdmissionFromActivity = //div[@class='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//h2[contains(text(),'Admissions')]//ancestor::p-accordiontab//div[@ role = 'tabpanel']//tbody//tr[1]//span/nm-button/button
+
+AddAdmissionsFromActivity = //div[@class='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//h2[contains(text(),'Admissions')]//ancestor::p-accordiontab//div[@ role = 'tabpanel']//nm-button-group//button[text()]
+
+AdmissionAdmitDateFromActivity = //div[@class='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//h2[contains(text(),'Admissions')]//ancestor::p-accordiontab//div[@ role = 'tabpanel']//p-table//div//tr/td[3]
+
+AdmissionActualDischargeDateFromActivity = //div[@class='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//h2[contains(text(),'Admissions')]//ancestor::p-accordiontab//div[@ role = 'tabpanel']//p-table//div//tr/td[6]
+
+DaysInHospitalFromActivity = //div[@class='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//h2[contains(text(),'Admissions')]//ancestor::p-accordiontab//div[@ role = 'tabpanel']//p-table//div//tr/td[4]
+
+AdmissionAccordianFromActivity = //h2[contains(text(),'Admissions')]
+
+AdmissionFromSAWindow = //label[contains(text(),'Admissions')]//..//label
+

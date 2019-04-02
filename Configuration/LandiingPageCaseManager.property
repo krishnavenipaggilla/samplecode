@@ -1,0 +1,110 @@
+ColumnsOnGrid=//th//span[text()]
+---***//th[@class='ui-sortable-column ng-star-inserted']//span[text()]****----
+TextboxesonGrid=//th[@class='ui-state-default ui-unselectable-text ui-sortable-column ng-star-inserted']//input[@type='text']
+
+
+TextAreasonGridForFilter=//div[@class='ng-star-inserted']//input[@type='text']
+
+FilterButtonOnMembers=//button[@type='submit']
+
+DateRangeToOnMembers=(//input[@type='text'])[3]
+DateRangeFromOnMembers=(//input[@type='text'])[2]
+
+NextTaskDue=//label[text()='All Members']
+
+AppendingCoulmn1=//th[@class='ui-sortable-column ng-star-inserted'][columnNumber]/span
+AppendingCoulmn=(//th//span[text()])[columnNumber]
+
+
+#ColumnswithTextFilters=//div[@class='ui-datatable-scrollable-view']//th[not(contains(@class,'hidden'))]//input[@type='text']/../..//span[contains(@class,'ui-column-title ng-star-inserted')]//span[contains(@class,'ng-star-inserted')]
+
+ColumnswithTextFilters=//div[@class='ng-star-inserted']//input[@type='text']
+
+CaseSupervisorViewDropDown=.//*[@id='csViewBy']
+
+MemberSearchLink=//button[text()='Member Search']
+SupervisorGroupQueue=//button[text()='Supervisor Group Queue']
+ClearAllFilters=//button[text()='Clear']
+VerifyNextTaskDue=//span[normalize-space()='Next Task Due']//parent::th//following::tr//td[6]
+VerifyTaskDue=//span[normalize-space()='Task Due']//parent::th//following::tr//td[7]
+VerifyTaskDuedate=//span[normalize-space()='Task Due date']//parent::th//following::tr//td[12]
+
+CaseAssignmentLink=//button[text()='Case Assignment']
+
+CaseLoadMyTeamDropdown=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Caseload View - My Team']
+
+GroupQueueDropDown=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Case Status View – All Case Managers']
+
+CaseLoadALLCMDD=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Caseload View - All Case Managers']
+CaseLoadAllCM=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div
+MemberMyTeamDD=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Member View - My Team']
+
+
+MemberAllCMDD=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Member View - All Case Managers']
+MyMembersDD=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='My Members']
+
+ImageOnColumn=//i[contains(@class,'fa fa-fw fa-filter hidden')]
+
+CheckBoxOnGrid=//div[@class='ui-chkbox-box ui-widget ui-state-default']
+ArrowOnGrid=//i[@class='fa fa-fw fa-chevron-circle-right ui-row-toggler']
+NoRecordsFound=//tr[@class='ng-star-inserted']//ancestor::td
+NextTaskDueDropDown=//label[contains(text(),'Next Task Due:')]//following-sibling::p-dropdown//div
+SupervisorGroupQueueView=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Case Status View – All Case Managers']
+CaseSpecialistView=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Member View - Case Specialist Manager']
+EnrollmentAnalystView=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Member View - Enrollment Analyst Manager']
+
+
+ColumnsOnGrid=//th//span[text()]
+---***//th[@class='ui-sortable-column ng-star-inserted']//span[text()]****----
+TextboxesonGrid=//th[@class='ui-state-default ui-unselectable-text ui-sortable-column ng-star-inserted']//input[@type='text']
+
+
+TextAreasonGridForFilter=//div[@class='ng-star-inserted']//input[@type='text']
+
+FilterButtonOnMembers=//button[@type='submit']
+
+DateRangeToOnMembers=(//input[@type='text'])[3]
+DateRangeFromOnMembers=(//input[@type='text'])[2]
+
+NextTaskDue=//label[text()='All Members']
+
+AppendingCoulmn=(//th//span[text()])[columnNumber]
+
+#ColumnswithTextFilters=//div[@class='ui-datatable-scrollable-view']//th[not(contains(@class,'hidden'))]//input[@type='text']/../..//span[contains(@class,'ui-column-title ng-star-inserted')]//span[contains(@class,'ng-star-inserted')]
+
+ColumnswithTextFilters=//div[@class='ng-star-inserted']//input[@type='text']
+
+CaseSupervisorViewDropDown=.//*[@id='csViewBy']
+
+MemberSearchLink=//button[text()='Member Search']
+SupervisorGroupQueue=//button[text()='Supervisor Group Queue']
+ClearAllFilters=//button[text()='Clear']
+VerifyNextTaskDue=//span[normalize-space()='Next Task Due']//parent::th//following::tr//td[6]
+VerifyTaskDue=//span[normalize-space()='Task Due']//parent::th//following::tr//td[7]
+VerifyTaskDuedate=//span[normalize-space()='Task Due date']//parent::th//following::tr//td[12]
+
+CaseAssignmentLink=//button[text()='Case Assignment']
+
+CaseLoadMyTeamDropdown=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Caseload View - My Team']
+
+GroupQueueDropDown=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Case Status View – All Case Managers']
+
+CaseLoadALLCMDD=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Caseload View - All Case Managers']
+CaseLoadAllCM=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div
+MemberMyTeamDD=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Member View - My Team']
+
+
+MemberAllCMDD=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Member View - All Case Managers']
+MyMembersDD=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='My Members']
+
+ImageOnColumn=//i[contains(@class,'fa fa-fw fa-filter hidden')]
+
+CheckBoxOnGrid=//div[@class='ui-chkbox-box ui-widget ui-state-default']
+ArrowOnGrid=//i[@class='fa fa-fw fa-chevron-circle-right ui-row-toggler']
+NoRecordsFound=//tr[@class='ng-star-inserted']//ancestor::td
+NextTaskDueDropDown=//label[contains(text(),'Next Task Due:')]//following-sibling::p-dropdown//div
+SupervisorGroupQueueView=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Case Status View – All Case Managers']
+CaseSpecialistView=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Member View - Case Specialist Manager']
+EnrollmentAnalystView=//label[contains(text(),'View By:')]//following-sibling::p-dropdown//div//span[text()='Member View - Enrollment Analyst Manager']
+
+

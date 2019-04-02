@@ -1,0 +1,73 @@
+**----------Interventions----------**
+BreadCrumb =//nm-breadcrumb//li[2]/a[text()]
+Header= //nm-table//p-header
+ShowingValue= //nm-table//p-header//following-sibling::div
+AddIntervention1= //button[contains(.,'Add Intervention')]
+AddInterventionHeader= //nm-label/h2
+InterventionGoalGrid= //nm-table//p-header
+CheckBox= //p-table//nm-header-checkbox
+EditIntervention= //button[contains(@title,'Edit Intervention')]
+HistoryButton= //button[contains(@title,'Intervention history')]
+GridCount= //p-table//div//tbody//following-sibling::tr
+AssignedTo= //label[contains(text(),'Assigned To')]//ancestor::nm-input-label/following-sibling::p-dropdown//label
+SelectGoal= //p-tablecheckbox//div/following-sibling::div
+SubmitIntervention= //button[contains(text(),'Submit')]
+InterventionsDropdown= //p-dropdown//label[text()='Please Select...']
+Wait_Interventions= //div[@class='ui-dropdown-items-wrapper']
+SelectIntervention= //div[@class='ui-dropdown-items-wrapper']/ul/li
+AssignedToDropdown= //label[contains(text(),'Assigned To')]//ancestor::nm-combobox//following-sibling::p-dropdown//label
+Wait_AssignedTo= //label[contains(text(),'Assigned To')]//ancestor::nm-input-label/following-sibling::p-dropdown//div[@class='ui-dropdown-items-wrapper']/ul
+SelectAssignedTo= //label[contains(text(),'Assigned To')]//ancestor::nm-input-label/following-sibling::p-dropdown//div[@class='ui-dropdown-items-wrapper']/ul/li
+SelectedIntervention= //label[contains(text(),'Select Intervention')]//ancestor::nm-input-label/following-sibling::p-dropdown//label
+SelectedAssignedTo= //label[contains(text(),'Assigned To')]//ancestor::nm-input-label/following-sibling::p-dropdown//label
+//------------Int-------------
+EditIntervention= //p-table//div//tr[last()]/td[8]
+HistoryButton= //p-table//div//tr[last()]/td[9]
+//--------- Validating the data inside the interventions history page--//
+
+InterventionTextGoalHi=//div/p-table/div/div/table/tbody/tr[1]/td[1]/span
+AssignedToTextGoalHi=//div/p-table/div/div/table/tbody/tr[1]/td[2]/span
+StatusTextGoalHi=//div/p-table/div/div/table/tbody/tr[1]/td[3]/span
+StatusReasonTextGoalHi=//div/p-table/div/div/table/tbody/tr[1]/td[4]/span
+UpdatedByUserTextGoalHi=//div/p-table/div/div/table/tbody/tr[1]/td[5]/span
+UpdatedDateGoalHi=//div/p-table/div/div/table/tbody/tr[1]/td[6]/span
+BackButtonInInterventionHistoryPage=//button[contains(text(),'Back')]
+InterventionsValidationInGrid=//span[contains(text(),'Intervention')]
+AssignedToValidationInGrid=//span[contains(text(),'Assigned To')]
+StatusValidationInGrid=//span[contains(text(),'Status')]
+StatusReasonValidationInGrid=//span[contains(text(),'Status Reason')]
+UpdatedByUserValidationInGrid=//span[contains(text(),'Updated by User')]
+UpdatedDateValidationInGrid=//span[contains(text(),'Updated Date')]
+BackButtonInInterventionHistoryPage=//button[contains(text(),'Back')]
+//-----------Edit intervention page---------------------------------------//
+
+EditInterventionLink=//div/table/tbody/tr[1]/td[7]/span/nm-button/button
+
+
+ValidatingAssociatedGoal=//label[@for='linkedGoalName'][contains(.,'Associated Goal')]
+ValidatingIntervention=//label[@for='name'][contains(.,'Intervention')]
+ValidatingAssignedTo=//label[@for='assignedTo'][contains(.,'Assigned To')]                    
+ValidatingStatus=//label[@for='status']
+InterventionDescription=//div/nm-element[2]/div/nm-input/p
+AssociatedGoalDescription=//div/nm-element[1]/div/nm-input/p
+ValidatingStatusReason=//label[@for='statusReason'][contains(.,'Status Reason')]
+AssignedToDropdown=//div/nm-element[4]/div/nm-combobox/p-dropdown/div/label   
+SelectingSnowWhiteInAssignedToDropdown=//span[contains(.,'Snow White')] 
+Statusdropdown=//label[contains(text(),'Status')]//ancestor::nm-input-label//following-sibling::p-dropdown/div
+SelectingNotStartedInStatusDropdown=//div/nm-combobox/p-dropdown/div/div[3]/div/ul/li[1]/span
+
+MetInStatusReasonDrp=//div/nm-combobox/p-dropdown/div/div[3]/div/ul/li[1]/span
+PartiallyMetInStatusReasonDrp=//div/nm-combobox/p-dropdown/div/div[3]/div/ul/li[2]/span
+NotClinicallyAppropriateInStatusReasonDrp=//div/nm-combobox/p-dropdown/div/div[3]/div/ul/li[3]/span
+NotCompliantInStatusReasonDrp=//div/nm-combobox/p-dropdown/div/div[3]/div/ul/li[4]/span
+ProgressPlateauInStatusReasonDrp=//div/nm-combobox/p-dropdown/div/div[3]/div/ul/li[5]/span
+
+SelectingInProgressInStatusDropdown=//div/nm-combobox/p-dropdown/div/div[3]/div/ul/li[2]/span
+SelectingClosedInStatusDropdown=//div/nm-combobox/p-dropdown/div/div[3]/div/ul/li[3]/span
+ValidatingStatusReasonWhenStatusIsNotStartedInEditInter=//label[contains(text(),'Status Reason')]//ancestor::nm-input-label//following-sibling::p-dropdown/div
+ValidateTextInStatusReason=//label[contains(text(),'Status Reason')]//ancestor::nm-input-label//following-sibling::p-dropdown/div
+SubmitButton=//button[text()='Submit']
+BackButton=//button[text()='Back']
+InterventionsLink=//span[text()='Interventions']
+InterventionHistoryLink=//div/table/tbody/tr[1]/td[8]/span/nm-button/button
+InterventionHistoryPageValidation=//p-header[contains(text(),'Intervention History')]

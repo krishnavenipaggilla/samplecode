@@ -1,0 +1,7 @@
+RecordCotactPath=//button[@title = 'Record a Contact']
+SubmitandAddNewPath=//button[text()='Submit and Add New']
+ContatDetailsPath=//a[text()='Contact Details']
+SubmitContactPath=//button[text()='Submit Contact']
+RecordContactDrop=(//label[contains(text(),'Please Select...')])[1]//following-sibling::div
+RecordContactDropOptions=(//label[contains(text(),'Please Select...')])[1]//following-sibling::div//li//span
+CaptureProgramName=//label[contains(text(),'Program')]//parent::nm-input-label//following-sibling::p

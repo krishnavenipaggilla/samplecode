@@ -1,0 +1,24 @@
+BTN_AddaNote = //button[contains(.,'Add Notes')]
+TXT_CaseID = //div[@id='vsModalAddNote']//input[@id='associatedId']
+BTN_Back = //button[text()='Back']
+
+NotesLinkXpath = //div[@id='navbarToggler']//a[contains(text(),'Notes')]
+AddNoteXpath = //button[contains(.,'Add Note')]
+NoteTypeXpath = //label[contains(text(),'Note Type')]//parent::nm-input-label//following-sibling::p-dropdown//div//label
+---*//label[contains(text(),'Note Type')]//following-sibling::p-dropdown//label*----
+SensitiveChkBoxXpath = //label/span[contains(text(),'Sensitive')]
+NoteInfoXpath = //textarea[@id='noteDescription']
+SaveAndSubmitXpath = //button[text()='Submit']
+CancelXpath = //button[text()='Back']
+NotesTableXpath = //p-header//caption[contains(text(),'Notes')]//ancestor::nm-table//table/tbody/tr[replaceMeWithRow]/td[replaceMeWithCol]
+FromDateXpath =(//label[contains(text(),'From Date')]//following::input)[1]
+ToDateXpath =(//label[contains(text(),'To Date')]//following::input)[1]
+StatusDropDownXpath = //label[contains(text(),'Status')]//following-sibling::p-dropdown//div
+FilterXpath = //button[contains(text(),'Filter')]
+ActionDropDownXpath = //*[@id='gsFlexGrid']//nm-action-dropdown//button
+ViewNotesXpath = //p-header//caption[contains(text(),'Notes')]//ancestor::nm-table//table/tbody/tr[1]/td[6]//a
+ModalWindowTitleXpath = //h2[contains(text(),'View Note')]
+ModalWindowViewNotesXapth = //*[@id='vsModalViewNote']
+ViewNoteCellXpath = //*[@id='vsModalViewNote']/nm-card-details//span[replaceMe]
+GridXpath = //*[@id='gsFlexGrid']//table/tbody
+CloseModalWindowXpath = //*[@id='vsModalViewNote']//button

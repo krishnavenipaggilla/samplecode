@@ -1,0 +1,44 @@
+**-----Member Search WebElements------**
+MemberSearchLink = //button[text()='Search']
+FirstName = //label[contains(text(),'Last Name')]
+LastName = //label[contains(text(),'First Name')]
+SearchMemberBtnXpath = //div[@id='vtMemberSearch']//button[text()='Search'] 
+MedicaidIdTextBox=//div[@id='vtMemberSearch']//input[@id='medicaidId']
+MedicareIdTextBox=//div[@id='vtMemberSearch']//input[@id='medicareId']
+SubscriberIdTextBox=//div[@id='vtMemberSearch']//input[@id='subscriberId']
+DateofBirth= //label[contains(text(),'DOB')]
+ElementVisibility=(//span[text()='Last Name']//ancestor::td)[1]
+ViewCaseDropDownImage=(//span[text()='First Name']//ancestor::td//following-sibling::td//button)[1]
+ViewCaseClick=(//span[text()='First Name']//parent::span//parent::td//following-sibling::td//a[contains(text(),'View Case')])[1]
+MemberId = //label[contains(text(),'Member ID #')]
+MemberCaseId = //label[contains(text(),'Case ID')]
+Gender = //legend[contains(text(),'Gender')]
+PhoneNum = //label[contains(text(),'Phone #')]
+State = //label[contains(text(),'State')]
+ZipCode = //label[contains(text(),'Zip Code')]
+EligibilityStatus = //label[contains(text(),'Eligibility Status')]
+ClearButton = //button[text()='Clear']
+BackButton = //button[text()='Clear']
+
+**-----Advance Member Search WebElements------**
+
+SearchResultFirstnamexpath =//span[contains(@title,'Sebastian')]
+SearchResultCreateOpenCaseXpath=//span[@title='Sebastian']//parent::span//parent::td//following-sibling::td//button
+SelectCreateOpenCase= //span[@title='Sebastian']//parent::span//parent::td//following-sibling::td//a[contains(text(),'Create/Open Case')]
+----------------------------------------
+
+***----Method - MemberSearch to LeftNav---*****
+
+<<<<<<< HEAD
+#MemberSearchLinkXpath = //i[@class = 'fa fa-search ng-star-inserted']
+MemberSearchLinkXpath =//button[@type = 'button' and @title = 'Member Search']
+=======
+MemberSearchLinkXpath = //button[@type = 'button'  and @title = 'Member Search']
+>>>>>>> 08efa1318afc1d1e5100f40992e11cea6356311b
+CaseIdXpath = //input[@id = 'caseId']
+SearchButtonXpath = //button[contains(text(),'Search')]
+InitialOutreachElementXpath = //table/thead/tr/th/span[contains(text(),'Activity Type')]/ancestor::thead/following-sibling::tbody/tr/td/span[@title = 'Initial Outreach']/span[contains(text(),'Initial Outreach')]
+SearchResultsXpath = //table/thead/tr/th/span[contains(text(),'Case ID #')]/ancestor::thead/following-sibling::tbody/tr
+ClearButtonXpath = //button[text()='Clear']
+PaginationElement1Xpath = (//span[@class = 'ui-paginator-icon pi pi-step-forward'])[1]
+LastCaseIdFromGridXpath = //tbody//tr[last()]//td[1]//a

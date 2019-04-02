@@ -1,0 +1,63 @@
+//**********From Initial Outreach******************//
+initialOutreachEyeElementXpath = //table//tbody//tr//td//span[@title = 'Initial Outreach']//parent::td//following-sibling::td//a[@class = 'fa fa-pencil-square-o pull-right ng-star-inserted']
+
+initialOutreachBreadCrumbElementXpath = //div[@class = 'breadcrumb-bar']//li//a[text()='Initial Outreach']
+
+authRepAccordianElementXpath = //a//p-header//h2[contains(text(), 'Authorized Representatives')]
+
+addAuthRepGridHeaderElementXpath = //div//p-header//caption[contains(text(),'Authorized Rep(s)')]
+
+addAuthRepLinkElementXpath = //button[contains(.,'Add Authorized Representative')]
+
+modalHeaderElementXpath = (//div[@role ='dialog' and not(contains(@style,'display: none'))]//span/p-header)
+
+firstNameXpath = //div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//child::div//child::div//following-sibling::p-table//child::div//child::div//table//child::thead/tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[3]//span[1]
+
+lastNameXpath = //div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//child::div//child::div//following-sibling::p-table//child::div//child::div//table//child::thead/tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[4]//span[1]
+
+relationshipToMemberXpath = //div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//child::div//child::div//following-sibling::p-table//child::div//child::div//table//child::thead/tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[5]//span[1]
+
+phoneXpath = //div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//child::div//child::div//following-sibling::p-table//child::div//child::div//table//child::thead/tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[7]//span[1]
+
+verifiedDateXpath = //div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//child::div//child::div//following-sibling::p-table//child::div//child::div//table//child::thead/tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[2]//span[1]
+
+sourceXpath = //div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//child::div//child::div//following-sibling::p-table//child::div//child::div//table//child::thead/tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[8]//span[1]
+
+phoneTypeXpath = //div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//child::div//child::div//following-sibling::p-table//child::div//child::div//table//child::thead/tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[6]//span[1]
+
+//------------addAndVerifyDateFromGridForMultipleAuthReps--------//
+
+
+nonVerifiedRecordsInGridElementXpath = //nm-table//div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//table//tbody//tr//td[2]//span[@title='']
+
+gridHeaderCheckBoxElementXpath = //nm-table//div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//table//thead//tr//th[1]//nm-header-checkbox/div
+
+saveProgressBtnElementXpath = //nm-table//div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//table//tfoot//div//button[@type = 'button']
+
+//---------------From Overview--------------//
+PaginationLastPageElementXpath = (//a//span[@class ='fa fa-step-forward'])[1]
+GridRowCountElementXpath = //nm-table//div//p-header[contains(text(),'Authorized Representatives')]//ancestor::nm-table//table//tbody//tr
+
+NameXpathFromOverview = //table//thead//tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[3]
+
+RelationshipToMemberXpathFromOverview = //table//thead//tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[4]
+
+PhoneXpathFromOverview = //table//thead//tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[5]
+
+VerifiedDateXpathFromOverview = //table//thead//tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td[2]
+
+ExpandCollapseLastRecordInGridElementXpath = (//a[@href = '#']//i)[last()]
+
+SourceXpathFromOverview = //table//thead//tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td//span[1]//div//div//div
+
+PhoneTypeXpathFromOverview = //table//thead//tr//th//span[contains(text(),'Verified Date')]//ancestor::thead//following-sibling::tbody//tr[last()]//td//span[2]//div//div//div
+
+NonVerifiedRecordsInGridElementXpath = //nm-table//div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//table//tbody//tr//td[2]//span[@title='']//ancestor::tr//td[1]//div//span
+
+NonVerifiedRecordsInGridElementXpathClick = //nm-table//div//p-header//caption[contains(text(),'Authorized Rep(s)')]//ancestor::nm-table//table//tbody//tr//td[2]//span[@title='']//ancestor::tr//td[1]//p-tablecheckbox/div
+
+//--------------Edit From Overview--------------//
+
+EditIconForAuthRepOnOverViewElementXpath = //table//tbody//tr[position()=last()]//button/i[@class = 'fa-pencil-square-o fa']
+EditModalHeaderElementXpath = (//div[@role = 'dialog']//span//p-header)[6]
+

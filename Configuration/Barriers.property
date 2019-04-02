@@ -1,0 +1,64 @@
+
+/**
+ * Author-AF86867 
+ * Epic-14386
+ *
+ */
+
+
+**-----Barriers Page ------**
+CaseID = //input[@id='caseId']
+MemberSerchClickXpath = //button[@type = 'button'  and @title = 'Member Search']
+CarePlanLink = //span[contains(text(),'Care Plan')]
+CarePlanText = //caption[contains(text(),'Care Plan')]
+GoalDropdownForAddGoal = //label[contains(text(),'Goal')]/../following-sibling::p-dropdown
+FirstOptionInGoalDropDown = //p-dropdown//following-sibling::div//li[2]//span
+PriorityDropdownForAddGoal = //label[contains(text(),'Priority')]/../following-sibling::p-dropdown
+FirstOptionInPriorityDropdown = //label[contains(text(),'Priority')]/../following-sibling::p-dropdown//div//li[1]
+AddGoalStatusDropdown = //label[contains(text(),'Status')]/../following-sibling::p-dropdown
+FirstOptionInStatusDropdown = //label[contains(text(),'Status')]/../following-sibling::p-dropdown//div//li[1]
+AddGoalStatusReasonDropdown = //label[contains(text(),'Status Reason')]/../following-sibling::p-dropdown
+FirstOptionInStatusReasonDropdown = //label[contains(text(),'Status Reason')]/../following-sibling::p-dropdown//div//li[1]
+DateDropdown = //div/nm-input-calendar/p-calendar/span/input
+BarriersLinkXpath = //a//span[contains(text(),'Barriers')]
+AddBarrierbuttonXpath = //button[contains(.,'Add Barrier')]
+AddBarrierText = //h3[contains(text(),'Add Barrier')]
+BarrierDropdown = //div/nm-combobox/p-dropdown/div/div[2]
+BarrierOption = //div/nm-combobox/p-dropdown/div//li[1]
+ChooseGoal = //table/tbody//tr[1]//td[1] 
+BarriersGridHeader = //caption[contains(text(),'Barriers')]
+AddGoalXpath = //button[contains(.,'Add Goal')]
+AddGoalTextXpath = //h2[contains(text(),'Add Goal')]
+AddBarrierSubmitButton = //button[contains(text(),'Submit')]
+BackButton = //button[contains(text(),'Back')]
+BarriersTitleXpath = //caption[contains(text(),'Barriers')]
+BarrierGridComparisonXpath = //p-table//th//span[1][1]
+BarriersGrid_DescriptionXpath = //span[contains(text(),'Description')]
+BarriersGrid_LinkedGoalXpath = //span[contains(text(),'Linked Goal')]
+BarriersGrid_IdentifiedDateXpath = //span[contains(text(),'Identified Date')]
+BarriersGrid_ResolvedDateXpath = //span[contains(text(),'Resolved Date')]
+BarriersGrid_StatusXpath = //span[contains(text(),'Resolved Date')]//following::th[1]//span[contains(text(),'Status')]
+BarriersGrid_StatusReasonXpath = //th//span[contains(text(),'Status Reason')]
+BarrierDescriptionXpath = //label[@class='required ng-star-inserted'] 
+EditBarrierXpath = //h1[contains(text(),'Edit Barrier')]
+AddBarrier_SubmitXpath = //button[contains(text(),'Submit')]
+AddBarrier_BackbuttonXpath = //button[contains(text(),'Back')]
+EditBarrierIcon = //caption[contains(text(),'Interventions and Barriers')]/../../..//span[@title='Barrier']/../..//button
+EditBarrierText = //h3[contains(text(),'Edit Barrier')]
+EditBarrier_SubmitXpath = //button[@class='btn btn-primary ng-star-inserted'][contains(text(),'Submit')]
+EditBarrier_BackbuttonXpath = //button[@type='button'][contains(text(),'Back')]
+EditBarrier_Statusdropdown = (//label[contains(text(),'Status')]//following::p-dropdown//span)[1]
+EditBarrier_StatusReasonDropdown = //label[contains(text(),'Status Reason')]//following::p-dropdown//span
+EditBarrier_AssociatedGoal = //label[contains(text(),'Associated Goal')]
+EditBarrier_Description = //label[contains(text(),'Description')]
+EditBarrier_DescriptionField = //label[contains(text(),'Description')]/../../..//p
+EditBarrier_IdentifiedDate = //label[contains(text(),'Identified Date')]
+EditBarrier_IdentifiedDateField = //label[contains(text(),'Identified Date')]/../../..//p
+EditBarrier_ResolvedDateField = //label[contains(text(),'Resolved Date')]/../..//p
+GoalsCheckboxXpath = //span[@class='ng-star-inserted'][contains(text(),'Goal')]
+
+NotesText = //caption[contains(text(),'Notes')]
+AddNotesHeader = //p-header[contains(text(),'Add Notes')]
+NotesDescription = //textarea[@id='noteDescription']
+AddNotesSubmitButton = (//button[@class='btn btn-primary ng-star-inserted'][@type='submit'][contains(text(),'Submit')])[2]
+AddNotesBackButton = //button[contains(text(),'Back')][@class='btn btn-secondary ng-star-inserted'][@type='reset']

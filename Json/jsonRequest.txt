@@ -1,0 +1,154 @@
+{
+                "statusReason" : "Test Description",
+                "referral" : {
+                                "source": "NICU_PRM",
+                                "program": "NICU",
+                                "userId": "12356",
+                                "dateTime": "2015-07-28",
+                                "dateCreated":"2018-06-15T16:00:48.455Z",
+                                "phoneNumber": "1234567890",
+                                "userName": "Vam",
+                                "email": "testing@abc.com",
+                                "referredToType": "Doctor",
+                                "referredTo": "casemanager",
+                                "reasonForMgmt":"Reason 1",
+                                "notes": "Test PayLoad testing",
+                                "reasons": [{
+                                                "code": "code1",
+                                                "description": "descripiton1"
+                                },{
+                                                "code": "code2",
+                                                "description": "descripiton2"
+                                }
+                                ],
+                                "gestationAgeInDays": "100",
+                                "birthWeightInLbs": "3",
+                                "acuityLevel": "High",
+                                "dischargeChecklist": [{
+                                                "documentId": "45-2",
+                                                "documentFileName": "Labtest1",
+                                                "documentDescription": "Details of tests",
+                                                "documentCreatedBy": "sam",
+                                                "documentMIMEType": "jpeg",
+                                                "documentCreatedDateTime" : "2018-06-15T16:00:48.455Z"
+                                              
+                                }
+                                ],
+                                "speciality": "TestPay"
+              
+    },
+    "associatedMember" : {
+                    
+					"memberId": "memberIdValue",
+                    "dob" : "1987-06-28",
+                                "firstName" : "APIFirst Auto",
+                                "lastName" : "APILast Auto",
+                                "gender" : "M",
+                                                                                                                                "designatedRep":[
+                                 {  
+                                  "designatedRepType" : "Mother",
+                                  "designatedAuthorizedRep":true,
+                                "designatedRepLastName" : "San",
+                                "designatedRepFirstName" : "mimis",
+                                "designatedRepMemberId" : "100225",
+                                "designatedRepName": "l",
+                                  "designatedRepContact":[{
+                                  "preferred":true,
+                                   "designatedRepPhone": "44445888",
+                                   "designatedRepPhoneType":"eeeee"
+                                    },
+                                    {
+                                  "preferred":true,
+                                   "designatedRepPhone": "2222225888",
+                                   "designatedRepPhoneType":"eeee"
+                                    },
+                                    {
+                                  "preferred":false,
+                                   "designatedRepPhone": "3333333888",
+                                   "designatedRepPhoneType":"eeee"
+                                    }],
+                                   "designatedRepAddress1":"111",
+                               "designatedRepAddress2":"111",
+                                "designatedRepCity":"nj",
+                                "designatedRepState":"nj",
+                                "designatedRepZip":"30328",
+                                "designatedRepEmail": "222@abc.com"
+                                                                                                                                                },
+                                                
+                                                
+                                 {  
+                                  "designatedRepType" : "Mother",
+                                  "designatedAuthorizedRep":true,
+                                "designatedRepLastName" : "mimis",
+                                "designatedRepFirstName" : "kvtest",
+                                "designatedRepMemberId" : "102022",
+                                "designatedRepName": "kv",
+                                  "designatedRepContact":[{
+                                  "preferred":true,
+                                   "designatedRepPhone": "888888",
+                                   "designatedRepPhoneType":""
+                                    },
+                                    {
+                                  "preferred":true,
+                                   "designatedRepPhone": "2222225888",
+                                   "designatedRepPhoneType":"eeee"
+                                    },
+                                    {
+                                 "preferred":false,
+                                   "designatedRepPhone": "3333333888",
+                                   "designatedRepPhoneType":"eeee"
+                                    }],
+                                   "designatedRepAddress1":"111",
+                               "designatedRepAddress2":"111",
+                                "designatedRepCity":"nj",
+                                "designatedRepState":"nj",
+                                "designatedRepZip":"30328",
+                                "designatedRepEmail": "222@abc.com"
+                                                                                                                                                }               
+                                                
+                                                
+                                                
+                            ],
+                            
+                            "phones":[{
+                                                                                                                                                "type" : "CELL",
+                                                                                                                                                "number" :"789-1236-7895",
+                                                                                                                                                "extension" :"002"
+                                                                                                                                }],
+"email":"abc@gmail.com",
+                                "lengthOfStay": "1year",
+                                "memberStatus": "inpatient",
+                                "groupId": "grp1",
+                                "productId": "prd1",
+                                "lobId": "lobId",
+                                "dischargeDate": "2017-07-28",
+                                "diagnosis":[{
+                                                "type": "primary",
+                                                "code": "diagCode"
+                                }],
+                                "addresses": [{
+                                "type": "residential",
+                                "address1": "address1",
+                                "address2": "addr2",
+                                "city": "Atlanta",
+                                "state": "GA",
+                                "zip": "30041",
+                               "phone": "3452647254"
+                                }],
+                                "hasProvider":[{
+                                                "type": "PCP",
+                                                "name": "Test Provider",
+                                                "medicareId": "medicareId",
+                                                "npi": "testNPI",
+                                                "taxId": "234234",
+                                                "address1": "address1",
+                                                "address2": "address2",
+                                                "city": "Alabama City",
+                                                "state": "Alabama",
+                                               "zip": "3452463",
+                                                "fax": "3463456345635",
+                                                "phone": "3457652357"
+                                }]
+                                }
+              
+}

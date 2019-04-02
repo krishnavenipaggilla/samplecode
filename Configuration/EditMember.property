@@ -1,0 +1,32 @@
+Overview=//a//span[contains(text(),'Overview')]
+editMemberlink=//div[@id='memberDemographicSection']//a[@class='pull-right fa fa-pencil-square-o icon-large ng-star-inserted']
+ModalHeaderMember=//p-header[normalize-space()='Edit Member']
+MemberName=//label[contains(text(),'Member Name')]//following-sibling::div//span
+GenderEditMember=(//label[contains(text(),'Gender')]//following-sibling::div//span)[2]
+DOBEditMember=(//label[contains(text(),'DOB')]//following-sibling::div//span)[2]
+NickName=//label[contains(text(),'Nickname')]//following-sibling::div//span
+EthnicOrigin=//label[contains(text(),'Ethnic Origin')]//following-sibling::div//span
+memberFN=//label[contains(text(),'Member First Name')]//parent::nm-input-label//following-sibling::input
+memberLN=//label[contains(text(),'Member Last Name')]//parent::nm-input-label//following-sibling::input
+memberGender=(//label[contains(text(),'Gender')])[3]//parent::nm-input-label//following-sibling::p-dropdown//label
+memberDOB=//label[contains(text(),'DOB')]//parent::nm-input-label//following-sibling::p-calendar//input
+Address=//label[contains(text(),'Address')]//parent::div//following-sibling::div//span
+Phone=(//label[contains(text(),'Phone')]//parent::div//following-sibling::div//span)[2]
+Timezone=//label[contains(text(),'Time Zone')]//parent::div//following-sibling::div//span
+Day=//label[contains(text(),'Best Day')]//parent::div//following-sibling::div//span
+Time=//label[contains(text(),'Best Time')]//parent::div//following-sibling::div//span
+Commmethod=//label[contains(text(),'Preferred Communication')]//parent::div//following-sibling::div//span
+Language=//label[contains(text(),'Preferred Language')]//parent::div//following-sibling::div//span
+Email=//label[contains(text(),'Email')]//parent::div//following-sibling::div//span
+editConatctlink=//div[@id='memberContactDetailsSection']//a[@class='pull-right fa fa-pencil-square-o icon-large ng-star-inserted']
+ModalHeadercontact=//p-header[normalize-space()='Edit Contact']
+ChangeHistory=//*[@id="navbarToggler"]/nm-panelmenu/div/div[7]/div/a/span
+MemberUpdateHistory=//div//li//span[text()='Member Update History']
+History=//*[@id="changeHistoryFilterSection"]//div[2]
+HistoryDOB=(//span[@title='DOB']//following::td)[1]
+HistoryFN=(//span[@title='Member First Name']//following::td)[1]
+HistoryLN=(//span[@title='Member Last Name']//following::td)[1]
+HistoryNN=(//span[@title='Nickname']//following::td)[1]
+HistoryOrigin=(//span[@title='Ethnic Origin']//following::td)[1]
+UpdatedBy=(//span[@title='Member Last Name']//following::td)[3]
+RoleValue=//div[@class='userName']//nm-value

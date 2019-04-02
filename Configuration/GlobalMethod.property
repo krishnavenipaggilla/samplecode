@@ -1,0 +1,3 @@
+MemberBannerCaseStatusXpath=//span[text()='Case Status:']/following-sibling::span
+MemberBannerCaseStatusReasonXpath=//span[text()='Case Status Reason:']/following-sibling::span
+LoggedInUserXpath=//div[@class='userName']/nm-value[@class]

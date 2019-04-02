@@ -1,0 +1,7 @@
+MemRepresentative_xpath = //h2[contains(text(),'Member Representatives')]
+AddRepresentative=//button[contains(text(),' Add Representative ')]
+AddMemReprentativeTitle=//p[contains(text(),'Add Member Representative')]
+MemRepresentativeSave=//button[contains(text(),'Save')]
+Activitystartlabel=//label[contains(text(),' Activity Start Date ')]
+MemRepresntativeAddPhone=//button[contains(text(),' Add Phone ')]
+Editbutton=(//div[@class='text-sm-right inline-block buttonGroup']//button[@title='Edit'])[2]

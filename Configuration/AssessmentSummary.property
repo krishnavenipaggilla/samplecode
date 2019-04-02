@@ -1,0 +1,26 @@
+AssessmentPageColumnFilter = //input[contains(@class,'ui-column-filter')]
+AssessmentPageLink = Assessments/Forms
+AssessmentTableXpath = //table/tbody/tr[contains(@class, 'ng-star-inserted')]
+AssessmentStatusXpath =//span[text()='Status']/parent::td//span[@title]
+AssessmentDropDownTriggerXpath =//button[@class='dropdownTrigger']
+AssessmentViewAssessment = View Assessment
+AssessmentEditAsssessment = Edit Assessment
+AssessmentGridHeaderColumnsXpath =//span[@class= 'ui-column-title ng-star-inserted']/span[@class ='ng-star-inserted']  
+AssessmentNameFilter =//span[@title='Name']/ancestor::th/div/input
+LastUpdated = //span[@title='Last Updated']/ancestor::th/div/input
+LastUpdatedColumnFilterButton=//span[@title='Last Updated']/ancestor::th//a[contains(@class, 'gridFilterIcon')]
+LastUpdatedBy = //span[@title='Last Updated By']/ancestor::th/div/input
+UserName=//div[@class='userName']/nm-value
+UserRole=//div[@class='userRole']/nm-value
+LastUpdatedDate = //span[text()='Last Updated']/parent::td//span[@title]
+AssessmentDateList = //span[text()='Last Updated']/parent::td/span[contains(@class,'ui-cell')]/span[@title]
+AssessmentNameSort = //span[text()='Assessment Name']/parent::span/following-sibling::span[@class]
+AssessmentStatusSort = //span[text()='Status']/parent::span/following-sibling::span[@class]
+AssessmentTaskSort = //span[text()='Task']/parent::span/following-sibling::span[@class]
+AssessmentDateSort = //span[text()='Last Updated']/parent::span/following-sibling::span[@class]
+AssessmentUpdatedBySort = //span[text()='Last Updated By']/parent::span/following-sibling::span[@class]
+AssessmentNameList = //span[text()='Assessment Name']/parent::td/span[contains(@class,'ui-cell')]/span[@title]
+AssessmentStatusList = //span[text()='Status']/parent::td/span[contains(@class,'ui-cell')]/span[@title]
+AssessmentTaskList = //span[text()='Task']/parent::td/span[contains(@class,'ui-cell')]/span[@title]
+AssessmentUpdatedByList = //span[text()='Last Updated By']/parent::td/span[contains(@class,'ui-cell')]/span[@title]
+DocumentGridHeaderColumnsXpath =//span[@class= 'ui-column-title ng-star-inserted']/span[@class ='ng-star-inserted']

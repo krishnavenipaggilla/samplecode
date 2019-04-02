@@ -1,0 +1,16 @@
+ComplexityLevelText= //*[@id="caseDetailSection"]//span[8]//label
+ComplexityLevelValue= //*[@id="caseDetailSection"]//span[8]//span
+OverviewEdit2= //nm-tile[3]//div/nm-link/a
+ModelWindowHeader= //div[@role="dialog"]//p-header
+ComplexityDropdownValues= (//div[@class='ui-dropdown-trigger ui-state-default ui-corner-right'])[1]
+ReasonForChangeValues= (//div[@class='ui-dropdown-trigger ui-state-default ui-corner-right'])[2]
+SelectComplexityHistory= //li//span[text()='Risk/Acuity History']
+ComplexityLevelHistoryGrid= //caption[text()='Risk/Acuity History']
+Text_ComplexityLevel= //label[contains(text(),' Risk/Acuity ')]//parent::nm-input-label//following-sibling::p-dropdown//div//label
+Text_ReasonForChange= //label[contains(text(),'Reason For Change')]//parent::nm-input-label//following-sibling::p-dropdown//div//label
+Submit_ComplexityLevel= //nm-button-group/div//button
+ProgramName= //div//label[text()='Program Name']//following-sibling::div/span
+lblPerformedBy=//div[@class='userName']/nm-value
+Wait_SelectValue= //div[@class='ui-dropdown-items-wrapper']/ul
+SelectDropdown= //div[@class='ui-dropdown-items-wrapper']/ul/li
+ChangeHistorydropdown=//*[@id="changeHistoryFilterSection"]//div[2]

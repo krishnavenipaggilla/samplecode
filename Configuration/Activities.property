@@ -1,0 +1,124 @@
+!--Activities-------
+
+!--ActivitiesLinkPath = //button[@class='btn btn-plain ng-star-inserted' and text()='View Activities']
+MemberSearchLinkpath= //button[@class='text-sm-right ng-star-inserted' and text()='Member Search']
+CaseIdtextbox=//div[@id='memberSearchSection']//input[@id='caseId']
+Searchbutton=//div[@id='memberSearchSection']//button[text()='Search']
+CaseIdLink=//div[@id='gsFlexGrid']//a
+SubsectionsPathreferral=//p-header//h2
+
+ReferralWorkActivitystatus=//span[text()='Referral Work']//ancestor::td//following::td//following-sibling::span
+ReferralWorkActivityImg=//span[text()='Referral Work']//ancestor::td//following-sibling::td//button
+ReferralWorkActivityOptions=//span[text()='Referral Work']//ancestor::td//following-sibling::td//ancestor::a
+ReferralWorkEditTaskPath=//span[text()='Referral Work']//ancestor::td//following-sibling::td//ancestor::a[contains(text(),'Edit Task')]
+
+InterventionActivitystatus=//span[text()='Clinical Intervention']//ancestor::td//following::td//following-sibling::span
+InterventionActivityImg=//span[text()='Clinical Intervention']//ancestor::td//following-sibling::td//button
+InterventionActivityOptions=//span[text()='Clinical Intervention']//ancestor::td//following-sibling::td//ancestor::a
+InterventionEditTaskPath=//span[text()='Clinical Intervention']//ancestor::td//following-sibling::td//ancestor::a[contains(text(),'Edit Task')]
+
+
+InitialOutreachActivityImg=//span[text()='Initial Outreach']//ancestor::td//following-sibling::td//button
+InitialOutreachActivityOptions=//span[text()='Initial Outreach']//ancestor::td//following-sibling::td//ancestor::a
+InitialOutreachEditTaskPath=//span[text()='Initial Outreach']//ancestor::td//following-sibling::td//ancestor::a[contains(text(),'Edit Task')]
+
+ConsultActivitystatus=//span[text()='Consult']//ancestor::td//following::td//following-sibling::span
+ConsultActivityImg=//span[text()='Consult']//ancestor::td//following-sibling::td//button
+ConsultActivityOptions=//span[text()='Consult']//ancestor::td//following-sibling::td//ancestor::a
+ConsultEditTaskPath=//span[text()='Consult']//ancestor::td//following-sibling::td//ancestor::a[contains(text(),'Edit Task')]
+
+!--//span[text()='Initial Outreach']//ancestor::td//following-sibling::td//a
+
+
+!--//span[text()='Status']/parent::td/span[contains(@class,'ui-cell-data')]/span[@title]
+
+!--- Activities----
+InitialOutreachActivitystatus=//span[text()='Initial Outreach']//ancestor::td//following-sibling::td[position()=1]//span
+AddActivities=//div[@id='vsActivityOverview']//button//nm-image
+#EditIntialoutreach=(//span[text()='Initial Outreach']//ancestor::td//following-sibling::td//span//a)[1]
+EditIntialoutreach=//span[text()='Initial Outreach']//ancestor::td//following-sibling::td//span//button
+IntroandPermissionsaccordian=(//p-header//h2[contains(text(),'Intro & Permission')])[1]
+IntialOutreachSaveProgress=(//button[text()='Save Progress'])[1]
+InitialOkbutton=//button[text()='Ok']
+CaseStatus=//label[text()='Case Status']//following-sibling::div//span
+EditClinicalIntervention=//span[text()='Clinical Intervention']/../../..//button
+ClinicalInterventionActivitystatus=//span[text()='Clinical Intervention']/../../..//td[2]//span[@class='fieldValue status ']
+GoalStatus=//tbody[@class='ui-table-tbody']//tr[1]//td[5]//span[1]//span[1]
+GoalReason=//tbody[@class='ui-table-tbody']//tr[1]//td[6]//span[1]//span[1]
+InterventionsStatus=//tbody[@class='ui-table-tbody']//tr[1]//td[4]//span[1]//span[1]
+InterventionsReason=//tbody[@class='ui-table-tbody']//tr[1]//td[5]//span[1]//span[1]
+BarriersStatus=//tbody[@class='ui-table-tbody']//tr[1]//td[5]//span[1]//span[1]
+BarriersReason=//tbody[@class='ui-table-tbody']//tr[1]//td[6]//span[1]//span[1]
+
+GoalCheckbox=//div/nm-table/div/p-table/div/div/table/thead/tr/th[1]/nm-header-checkbox/div/div[2]
+SubmitButtonAddIIntervention=//div/div[2]/div/nm-section[2]/div/nm-table/div/p-table/div/div/table/tfoot/div/button
+
+!---Initial Hippa Maintained---
+ChangeHistroyDropdown=//label[contains(text(),'Please Select...')]
+ChangeHistoryDropdownOption=//label[contains(text(),'Please Select...')]//following-sibling::div//li//span[text()='Contact History']
+CHMemberReached=//span[text()='Initial Outreach']//ancestor::td//following-sibling::td[position()=1]//span
+CHMemberReachedNot=(//span[text()='Initial Outreach'])[2]//ancestor::td//following-sibling::td[position()=1]//span
+ChangeHistroyDropdown1=//label[contains(text(),'Contact History')]
+ChangeHistoryDropdownOption1=//label[contains(text(),'Contact History')]//following-sibling::div//li//span[text()='Contact History']
+
+
+!----- Questionnaire Subsection---------
+
+Questionnaireaccordian=//p-header//h2[contains(text(),'Questionnaires')]
+AddQuestionnaire=//button[contains(text(),' Add Questionnaire ')]
+QuestionnaireSaveProgress=(//div[@class='text-sm-center buttonGroup']//following-sibling::button[contains(text(),'Save Progress')])[2]
+QuestionnaireEdit=//button[contains(@title,'Edit Questionnarie')]
+QuestionnaireName=//label[contains(text(),'Questionnaire Name ')]
+QuestionnaireSave=//button [text()='Save']
+QuestionnaireCancel=//button [text()='Cancel']
+QuestionniareHeader=//p-header//caption[text()='Questionnaire']
+QuestionnaireDrop=(//label[contains(text(),'Please Select...')])[9]
+!QuestionnaireDropOptions=(//label[contains(text(),'Please Select...')])[15]//following-sibling::div//li/span
+QuestionnaireDropOptions=//label[contains(text(),' Questionnaire Name ')]/parent::nm-input-label//following-sibling::p-dropdown//div//li//span
+Questionnairestatus=//span[text()='Not Started']
+QuestionnaireColumnsOnGrid=(//div[@class='ui-table-wrapper ng-star-inserted'])[2]//th[@class='ng-star-inserted']
+QuestionnaireAppendingCoulmn=(//div[@class='ui-table-wrapper ng-star-inserted'])[2]//th[@class='ng-star-inserted'][columnNumber]/span
+QuestionnaireDelete=//button[contains(@title,'Remove Questionnarie')]
+
+!----------Sub sections--------------------
+SubsectionsPath=//p-header//h2
+SubActivityIcon=//i[@class = 'fa addsubactivity ng-star-inserted']
+#SubActivityModelWindowHeader=//p-header[contains(text(),'Add Sub Activity')]
+SubActivityModelWindowHeader=//label[contains(text(),' Add Sub Activity ')]
+#ListOfSubactivities=//legend[text()='Activity Type ']//following-sibling::div//p-checkbox
+ListOfSubactivities=//legend[text()=' Activity Type ']//ancestor::nm-input-legend//following-sibling::div//p-checkbox
+
+#ListOfSubactivities=//legend[text()="Activity Type "]//following-sibling::div//p-checkbox//div[@class='ui-chkbox ui-widget']
+#ListOfSubactivities=//label[@class='ui-chkbox-label ng-star-inserted']
+SubActivityAddbutton=//button[text()='Add']
+
+EditCaseClosure=//span[text()='Case Closure']//ancestor::td//following-sibling::td//span//button
+CaseClosureActivitystatus=//span[text()='Case Closure']//ancestor::td//following-sibling::td[position()=1]//span//span
+
+EditReferral=//span[text()='Referral']//ancestor::td//following-sibling::td//span//button
+ReferralActivitystatus=//span[text()='Referral']//ancestor::td//following-sibling::td[position()=1]//span//span
+
+EditConsultation=//span[text()='Consultation']//ancestor::td//following-sibling::td//span//button
+ConsultationActivitystatus=//span[text()='Consultation']//ancestor::td//following-sibling::td[position()=1]//span//span
+
+EditCareCoordination=//span[text()='Care Coordination']//ancestor::td//following-sibling::td//span//button
+CareCoordinationActivitystatus=//span[text()='Care Coordination']//ancestor::td//following-sibling::td[position()=1]//span//span
+
+EditCaseReview=//span[text()='Case Review']//ancestor::td//following-sibling::td//span//button
+CaseReviewActivitystatus=//span[text()='Case Review']//ancestor::td//following-sibling::td[position()=1]//span//span
+
+!---------------------------17018(record contact)------
+
+btnSaveEndActivity = //button[contains(text(),'<button>')]
+btnSaveForLater = //button[contains(text(),'<button>')]
+btnBack= //button[contains(text(),'<button>')]
+lnkEditActivity=//span[contains(text(),'<ActivityName>')]/../../following-sibling::td//button[@title='Edit']
+lnkViewActivity=//span[contains(text(),'<ActivityName>')]/../../following-sibling::td//button[@title='View']
+
+
+!----------
+ViewInitialoutreach=//span[text()='Initial Outreach']//ancestor::td//following-sibling::td//span//button
+
+
+
+

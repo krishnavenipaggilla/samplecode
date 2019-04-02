@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--Calling methods from TestCases in a specific run order or pattern needed to execute a test case -AF53013-->
+
+<suite name="Suite" thread-count="2" parallel="tests">
+
+ <!--   
+ <test name="Login">
+    <classes>
+      <class name="com.nimbus.testcase.TestCases">
+      	<methods>
+      		<include name="payloadCase" />
+      		<include name="ValidUser" />
+       		<include name="CmdmHomePage" />
+       		<include name="SmokeTest" />
+      	</methods>
+      </class>
+    </classes> 
+    </test> --> <!-- Login -->
+       
+   <test name="IntergrationTesting1">
+    <classes>
+      <class name="com.nimbus.testcase.TestCases">
+      	<methods>
+      		<include name="payloadCase"/>
+       		<include name="ValidUser" />
+			<include name="CmdmHomePage" />
+       		<include name="SmokeTest" />
+       		<include name="CaseBanner" /> 
+      		<include name="ManagementReason" /> 
+      		<include name="addSupplementalInfo" /> 
+      		<include name="addNote" />
+      		
+      	</methods>
+      </class> 
+      
+      
+       <class name="com.nimbus.testcase2.TestCases">
+      	<methods>
+      		<include name="payloadCase"/>
+       		<include name="ValidUser" />
+			<include name="CmdmHomePage" />
+       		<include name="SmokeTest" />
+       		<include name="CaseBanner" /> 
+      		<include name="ManagementReason" /> 
+      		<include name="addSupplementalInfo" /> 
+      		<include name="addNote" />
+      		
+      	</methods>
+      </class> 
+    </classes>
+ 	</test> <!-- IntergrationTesting --> 
+
+</suite> 

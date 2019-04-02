@@ -1,0 +1,14 @@
+Editactivity = //p-table/div/div/table/tbody/tr/td[9]/span/nm-link/a
+AddSubActivity = //button[@title= 'Add Sub Activity']
+ImmunizationSubActivity = //label[contains(text(),'Immunization')]//..//label
+AddButtonForImmunization = //button[text()='Add']
+ImmunizationAccordian = //h2[contains(text(),'Immunizations')]
+ReasonForRefusalText = //label[contains(text(),'Reason for Refusal')]
+AddImmunizationText = //nm-label/h2[contains(text(),'Add Immunization')]
+EducationProvidedCheckbox = //span/nm-element/div/nm-single-checkbox/label
+EditImmunization = //div/nm-table/div/p-table/div/div/table/tbody/tr[1]/td[8]/span/nm-button//button[@title='Edit Immunization']
+InitailOutreachText = //span[contains(text(),'Initial Outreach')]
+EditImmunizationText = //h2[contains(text(),'Edit Immunization')]
+ImmunizationPagination = //div[@class='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//h2[contains(text(),'Immunizations')]//ancestor::p-accordiontab//div[@ role = 'tabpanel']//table/tbody//tr
+Innunization
+

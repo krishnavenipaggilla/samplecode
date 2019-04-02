@@ -1,0 +1,48 @@
+CareTeamXpath= //div[@id='navbarToggler']//div[11]
+AddProviderFromCareTeamXpath=//div[@class='text-sm-right ng-star-inserted']//button[@type='button']
+CareTeamRoleFromCareTeam=//nm-combobox[@id='addCareTeamMemberSection']//p-dropdown//label
+CareTeamChoice=//nm-combobox[@id='addCareTeamMemberSection']//ul//span[text()='Provider']
+CreateManualFromCareTeamRole=//button[contains(text(),'Create Manual')]
+IndividualFromCareTeamXpath=//label[contains(text(),'Individual')]
+ProviderIDFromCareTeamXpath=//input[@id='providerId']
+OrganizationNameFromCareTeamXpath=//input[@id='organizationName']
+FirstNameFromCareTeamXpath=//input[@id='firstName']
+LastNameFromCareTeamXpath=//input[@id='lastName']
+ProviderGenderFromCareTeamXpath=//label[contains(text(),'Male')]
+LanguageDropDownFromCareTeamXpath=////label[contains(text(),'Language')][1]/..//following-sibling::p-dropdown//div[contains(@class,'dropdown-trigger')]
+LanguageChoiceFromCareTeamXpath=//label[contains(text(),'Language')][1]/..//following-sibling::p-dropdown//span[contains(text(),'American Sign Language')]
+TitleDropDownFromCareTeamXpath=//label[@for='title'][1]/..//following-sibling::p-dropdown
+TitleChoiceFromCareTeamXpath=//label[@for='title'][1]/..//following-sibling::p-dropdown//span[text()='<DISPLAYED_TEXT>']
+ProviderSpecialtyDropDownXpath= //label[contains(text(),'Provider Specialty')]/following-sibling::p-dropdown
+ProviderSpecialtyChoiceXpath=//label[contains(text(),'Provider Specialty')]/following-sibling::p-dropdown//label/following-sibling::div[2]//ul//li[2]
+NPIFromCareTeamXpath=//input[@id='npi']
+DEAFromCareTeamXpath=//input[@id='dea']
+TaxIDFromCareTeamXpath=//input[@id='taxId']
+PhoneFromCareTeamXpath=//input[@id='phoneNumber']
+FaxFromCareTeamXpath=//input[@id='fax']
+EmailFromCareTeamXpath=//input[@id='email']
+AddressLine1FromCareTeamXpath=//input[@id='addressLine_1']
+AddressLine2FromCareTeamXpath=//input[@id='addressLine_2']
+CityFromCareTeamXpath=//input[@id='city']
+StateFromCareTeamDropDownXpath=//label[contains(text(),'State')]/following-sibling::p-dropdown
+StateFromCareTeamXpath=//label[contains(text(),'State')]/following-sibling::p-dropdown//label/following-sibling::div[2]//ul//li[12]
+ZipCodeFromCareTeamXpath=//input[@id='zipCode']
+ContactNameFromCareTeamXpath=//input[@id='contactName']
+ContactTitleFromCareTeamXpath=//input[@id='contactTitle']
+ContactByFromCareTeamDropDownOrganization=//label[contains(text(),'Contact By')]/following-sibling::p-dropdown/div
+ContactByFromCareTeamChoiceXpath=//label[contains(text(),'Contact By')]/following-sibling::p-dropdown/div//li[3]
+VerifiedFromCareTeamXpath=//label[@class='custom-control custom-check']
+PrimaryFromCareTeamXpath=//legend[contains(text(),'Primary')]/following-sibling::div//div[contains(@class,'form-checkrow ng-star-inserted')]/preceding-sibling::div
+SubmitFromCareTeamXpath=//button[contains(text(),'Submit')]
+
+StateFromCareTeamDropDownOrganization=//label[contains(text(),'State')]/following-sibling::p-dropdown
+StateChoiceFromCareTeamOrganizaion=//label[contains(text(),'State')]/following-sibling::p-dropdown//label/following-sibling::div[2]/div/ul//li[4]
+
+ContactByFromCareTeamDropDownOrganization=//label[contains(text(),'Contact By')][1]/..//following-sibling::p-dropdown
+ContactByChoiceFromCareTeamOrganization=//label[contains(text(),'Contact By')][1]/..//following-sibling::p-dropdown//span[text()='<DISPLAYED_TEXT>']
+
+PrimaryFromCareTeamOrganization=//legend[contains(text(),'Primary')]/following-sibling::div/div[1]//label[contains(text(),'Yes')]
+SubmitButtonFromCareTeamXpath=//button[contains(text(),'Submit')]
+EditButtonFromCareTeamXpath=//caption[text()='Care Team Members']/ancestor::div[@class='scrollGrid']//table//tbody//tr[1]//button[@title='Edit']
+ExpandButtonFromCareTeamXpath=//caption[text()='Care Team Members']/ancestor::div[@class='scrollGrid']//table//tbody//tr[1]//i
+OrganizationTypeFromCareTeamXpath=//legend[@class='required']/following-sibling::div//label[contains(text(),'Organization')]

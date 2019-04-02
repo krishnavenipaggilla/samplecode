@@ -1,0 +1,44 @@
+ChangeHistoryXpath=//a/span[text()='Change History']
+ChangeHistoryInformationDropDown=//*[@id="changeHistoryFilterSection"]//div[2]
+ChangeHistoryInformationDropDownValue=//span[contains(text(),'<DISPLAYED_TEXT>')]
+GridHeaderXpath=//div[@id='gsFlexGrid']//thead//span[@class='ng-star-inserted' and text()='<HEADER_NAME>']
+GridRecordsXpath=//div[@id='gsFlexGrid']//tbody//tr//span[@title]
+lnkEditActivity=(//span[contains(text(),'<ActivityName>')]/../../following-sibling::td//a)[1]
+btnAddSubActivity = //*[@id="vsBanner"]//nm-button[1]//i
+chkSubActivitycheckbox=//legend[contains(text(),'Activity Type')]/following-sibling::div/div
+lblSubActivityHeader=//p-header[contains(text(),'Add Sub Activity')]
+btnAdd=(//button[contains(text(),'Add')])[2]
+btnAdd=//button[contains(text(),'Close')]
+msgLoading = //div[contains(text(),'Loading.')]
+CaseReviewHeader = //span[contains(text(),'<ActivityName>')]
+lblSubactivityheaders=//div[@id='addSubActivityTile']//h2
+lblCaseinformationlabels=//h2[contains(text(),'<SubActivity Name>')]/../../../../..//span[@class='ng-star-inserted']//label
+lblCaseinformationlabelvalues=//h2[contains(text(),'<SubActivity Name>')]/../../../../..//span[@class='ng-star-inserted']//label/following-sibling::div
+lblQuestionairelabels=(//caption[contains(text(),'<SubActivity Name>')])[2]/../../..//thead//span
+lblQuestionairegridrow=(//caption[contains(text(),'Questionnaires')])[2]/../../..//tbody/tr
+lblQuestionairelabelvalues=(//caption[contains(text(),'Questionnaires')])[2]/../../..//tbody/tr[columnnumber]//span/span
+lblNorecords = //h2[contains(text(),'<SubActivity Name>')]/../../../../..//tbody/tr[1]/td[1]
+lblNorecordsQuestionaire=(//h2[contains(text(),'Questionnaires')]/../../../../..//tbody/tr[1]/td[1])[2]
+lblNorecordsgoals = //caption[contains(text(),'Goals')]/../../../../..//tbody/tr/td
+lblNorecordsInterventionsandBarriers = //caption[contains(text(),'Interventions and Barriers')]/../../../../..//tbody/tr/td
+lblMECOsubactivitylabels = //h2[contains(text(),'<SubActivity Name>')]/../../../../..//thead//th/span
+lblMECOsubactivitygridrow = //h2[contains(text(),'<SubActivity Name>')]/../../../../..//tbody/tr
+lblMECOsubactivitylabelvalues= //h2[contains(text(),'<SubActivity Name>')]/../../../../..//tbody/tr[columnnumber]//span/span
+lblgoalslabels=//caption[contains(text(),'Goals')]/../../..//thead//span
+lblgoalsgridrow=//caption[contains(text(),'Goals')]/../../..//tbody/tr
+lblgoalslabelvalues=//caption[contains(text(),'Goals')]/../../..//tbody/tr[columnnumber]//span/span
+lblInterventionsandbarrierslabels=//caption[contains(text(),'Interventions and Barriers')]/../../..//thead//span
+lblInterventionsandbarriersgridrow=//caption[contains(text(),'Interventions and Barriers')]/../../..//tbody/tr
+lblInterventionsandbarrierslabelvalues=//caption[contains(text(),'Interventions and Barriers')]/../../..//tbody/tr[columnnumber]//span/span
+btnAddQuestionnaires = //button[contains(text(),'Add Questionnaires')]
+lnkEditQuestionnaires = //tbody/tr/td[5]/span/nm-button/button/nm-image/span/i
+btnAddMedication = //button[contains(text(),'Add Medication')]
+lnkEditMedication =//tbody/tr/td[10]/span/nm-button/button/nm-image/span/i
+btnAddCondition = //button[contains(text(),'Add Condition')]
+lnkEditCondition =//tbody/tr/td[9]/span/nm-button/button/nm-image/span/i
+btnAddRepresentative = //button[contains(text(),'Add Representative')]
+lnkEditRepresentative = //tbody/tr/td[6]/span/nm-button/button/nm-image/span/i
+btnSaveEndActivity = //button[contains(text(),'<button>')]
+btnSaveForLater = //button[contains(text(),'<button>')]
+btnBack= //button[contains(text(),'<button>')]
+hdrcareplan=//h2[contains(text(),'Care Plan')]

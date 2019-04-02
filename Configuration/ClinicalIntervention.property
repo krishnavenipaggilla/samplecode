@@ -1,0 +1,19 @@
+//--------- Clinical intervention page--//
+IntroAndPermissionsExpandButton=//div/p-accordiontab/div[1]/a/p-header/nm-label/h2
+SaveProgressButton=//button[@class='btn btn-primary ng-star-inserted'][contains(.,'Save Progress')]
+Name=//div/div[2]/div/nm-section/div/nm-form[2]/form/nm-frm-grp/div/nm-element[1]/div/nm-table/div/p-table/div/div/table/thead/tr/th[1]/span
+Status=//div/div[2]/div/nm-section/div/nm-form[2]/form/nm-frm-grp/div/nm-element[1]/div/nm-table/div/p-table/div/div/table/thead/tr/th[2]/span
+LastUpdatedDate=/div/div[2]/div/nm-section/div/nm-form[2]/form/nm-frm-grp/div/nm-element[1]/div/nm-table/div/p-table/div/div/table/thead/tr/th[3]/span
+UpdatedBy=/div/div[2]/div/nm-section/div/nm-form[2]/form/nm-frm-grp/div/nm-element[1]/div/nm-table/div/p-table/div/div/table/thead/tr/th[4]/span
+InterventionsGrid=//div/div[2]/div/nm-section/div/nm-form[2]/form/nm-frm-grp/div/nm-element[2]/div/nm-table/div/div/p-header
+QuestionnairesGrid=//div/div[2]/div/nm-section/div/nm-form[2]/form/nm-frm-grp/div/nm-element[1]/div/nm-table/div/div/p-header
+ActivityType=//div/div[2]/div/nm-section/div/nm-form[2]/form/nm-frm-grp/div/nm-element[2]/div/nm-table/div/p-table/div/div/table/thead/tr/th[1]/span
+LinkedGoals=//div/div[2]/div/nm-section[3]/div/nm-table/div/p-table/div/div/table/thead/tr/th[3]/span
+Status=//div/div[2]/div/nm-section[3]/div/nm-table/div/p-table/div/div/table/thead/tr/th[4]/span
+StatusReason=//div/div[2]/div/nm-section[3]/div/nm-table/div/p-table/div/div/table/thead/tr/th[5]/span
+ClosedDate=//div/div[2]/div/nm-section/div/nm-form[2]/form/nm-frm-grp/div/nm-element[2]/div/nm-table/div/p-table/div/div/table/thead/tr/th[6]/span
+
+ErrorMessageUnderFactorsVerifiedCheckBoxes=//div/p-accordiontab/div[2]/div/nm-frm-grp/span/fieldset/nm-frm-grp[6]/span/fieldset/nm-frm-grp[5]/span/nm-element/div/nm-paragraph/p
+HandlingAlertMessageUponSubmission=//button[@class='btn btn-delete ng-star-inserted'][contains(.,'Ok')]
+ReasonForUnableToReachText=//div/fieldset[1]/nm-frm-grp/div/nm-element[2]/div/nm-combobox/label
+CompletedDateInterventionGrid=//div/div[2]/div/nm-section[3]/div/nm-table/div/p-table/div/div/table/thead/tr/th[6]/span

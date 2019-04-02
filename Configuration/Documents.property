@@ -1,0 +1,30 @@
+**-----Documents page ------**
+ViewCaseXpath = //table/tbody/tr[1]/td[12]
+DocumentsXpath = //span[contains(text(),'Documents')]
+UploadFilesIconXpath =  //button[@title='Upload Files']
+UploadedDocumentsTitleXpath = //p-header//caption[contains(text(),'Uploaded Documents')]
+ChooseFileXpath=(//span[text()='Choose']//parent::span)[1]
+DocumentNameFilterXpath = //th[1]//p-sorticon[@class='ng-star-inserted']//span
+UploadedDateFilterXpath = //span[@class='ui-sortable-column-icon fa fa-fw fa-sort fa-sort-asc']
+ChooseFiles = (//span[text()='Choose']//parent::span)[1]
+ChooseFile = //input[@type='file']
+FileDescriptionXpath = //input[@id='description']
+ViewDocumentXpath = //a[contains(text(),'View Document')]
+AddButtonXpath = //button[@type='submit'][contains(text(),'Add')]
+CancelButtonXpath = //button[contains(text(),'Cancel')]
+ViewDocumentClickXpath = //button[@aria-label='action menu' and @class = 'dropdownTrigger ng-star-inserted']
+ViewDocumentTextXpath = //a[contains(text(),'View Document')]
+DocumentName_GridXpath = //th//span[contains(text(),'Document Name')]
+ Description_GridXpath = //th//span[contains(text(),'Description')]
+UploadedDate_GridXpath = //th//span[contains(text(),'Uploaded Date')]
+AttachedTo_GridXpath = //th//span[contains(text(),'Attached To')]
+AddedBy_GridXpath = //th//span[contains(text(),'Added By')]
+DocumentID_GridXpath = //th//span[contains(text(),'Document ID')]
+RecordsDisplayed = //div[@class='recordsDisplayed']
+FileUrl = C:\\Users\\AF53013\\Desktop\\DocumentUpload\\TestDocUpload.docx
+FileSample = \\TestData\\NewTest.txt
+//FileUrl2 = C:\\Users\\AF86867\\Desktop\\DocUpload\\TempWord.docx
+//FileUrl3 = C:\\Users\\AF86867\\Desktop\\DocUpload\\ExcelUpload.xlsx
+
+
+

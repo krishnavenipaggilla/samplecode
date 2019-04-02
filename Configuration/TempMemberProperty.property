@@ -1,0 +1,4 @@
+//------------Manually Create Temp Member(Story-NIM-17181)-------------//
+WarningVerbiage = //p-header[contains(text(),'Temp Member Confirmation')]
+CreateTempMemberText = //p-header[contains(text(),'Create Temp Member')]
+

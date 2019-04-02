@@ -1,0 +1,42 @@
+AddSubActivity=//i[contains(@class,'fa addsubactivity ng-star-inserted')]
+MedicationFromAddSubActivity=//label[contains(text(),'Medications')][1]//parent::p-checkbox/div
+AddButtonFromAddSubActivity=//button[contains(text(),'Add')and @class='btn btn-primary ng-star-inserted']
+MedicationsFromSubSection=//div[@id='medicationsSubSection']//h2[text()='Medications']
+AddMedicationFromGrid=//button[contains(text(),' Add Medication ')]
+MedicationSeachTerm=//input[@id='drugName']
+ClickSearchButtonFromMedication=//button[@type='submit' and text()='Search']
+AddCapsuleMedication=//span[contains(text(),'CAPSULE. DELAYED RELEASE 20 mg/1')]/parent::span/parent::td/following-sibling::td[contains(@class,'imageColumn ng-star-inserted')]
+AddCapsuleMedicationSTR=//span[contains(text(),'CAPSULE 10 mg/1')]/parent::span/parent::td/following-sibling::td[contains(@class,'imageColumn ng-star-inserted')]
+QuinidineGluconate=//span[contains(text(),'TABLET. FILM COATED. EXTENDED RELEASE 12 mg/1')]/parent::span/parent::td/following-sibling::td[contains(@class,'imageColumn ng-star-inserted')]
+AddZyprexa=//span[contains(text(),'TABLET 2.5 mg/1')]/parent::span/parent::td/following-sibling::td[contains(@class,'imageColumn ng-star-inserted')]
+AddVerzenio=//span[contains(text(),'TABLET 100 mg/1')]/parent::span/parent::td/following-sibling::td[contains(@class,'imageColumn ng-star-inserted')]
+EditMedication=//td[contains(@class,'imageColumn ng-star-inserted')]//*[@title='Edit Medication']
+ViewHistory=//td[contains(@class,'imageColumn ng-star-inserted')]//*[@title='View History']
+CheckBox=//div[contains(@class,'ui-table-wrapper')]//descendant::div[@class='ui-chkbox ui-widget'][2]
+ExpandButton=//div[@class='buttonGroup left ng-star-inserted']//parent::tfoot/following-sibling::tbody//tr//descendant::td[2]//i
+ReviewButton=//button[contains(text(),' Review ')]
+ExpandHistoryButton=//div[@class='ui-table-wrapper ng-star-inserted']//parent::tfoot/following-sibling::tbody//tr//descendant::td[2]//preceding::i[1]
+AllColumnNames=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th/span
+ColumnName=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//table//th/span[text()='COL_NAME']
+ColumnValues=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//table//tr/td[COL_NUM]
+ColumnNumber= //div[@class='scrollGrid'][.//caption[text()='Current Medications']]//table//th[./span[text()='COL_NAME']]/preceding-sibling::th
+ColumnSortIcon=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//table//th[./span[text()='COL_NAME']]//i
+BackButtonHistory=//button[@class='btn btn-primary ng-star-inserted' and text()='Back']
+#ClickOnFilter=//*[contains(@class,'btn-plain ml-2 ng-star-inserted') and @title='show grid filters']
+ClickOnFilter=(//*[contains(@class,'btn-plain ml-2 ng-star-inserted') and @title='show grid filters'])[2]
+FilterBox1=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[4]//input
+ClearBox1=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[4]//div//i
+FilterBox2=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[6]//input
+ClearBox2=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[6]//div//i
+FilterBox3=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[7]//input
+ClearBox3=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[7]//div//i
+FilterBox4=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[8]//input
+ClearBox4=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[8]//div//i
+FilterBox5=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[9]//input
+ClearBox5=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//thead//th[9]//div//i
+DateAndTime=//div[@class='scrollGrid'][.//caption[text()='Current Medications']]//table//tr//td[3]
+AllColumnNamesMedicationHistory=//div[@class='scrollGrid'][.//caption[text()='Medication History']]//table//th/span
+ColumnNameMedicationHistory=//div[@class='scrollGrid'][.//caption[text()='Medication History']]//table//th/span[text()='COL_NAME']
+ColumnValuesMedicationHistory=//div[@class='scrollGrid'][.//caption[text()='Medication History']]//table//tr/td[COL_NUM]
+ColumnNumberPositionMedicationHistory=//div[@class='scrollGrid'][.//caption[text()='Medication History']]//table//th[./span[text()='COL_NAME']]/preceding-sibling::th
+ColumnSortIconMedicationHistory=//div[@class='scrollGrid'][.//caption[text()='Medication History']]//table//th[./span[text()='COL_NAME']]//i

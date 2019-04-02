@@ -1,0 +1,18 @@
+RecordContactAccordianXpath=//div[@id='addSubActivityTile']//h2[contains(text(),'Record Contact')]
+RecContactdropdownfieldsXpath=//label[contains(text(),'<fieldName>')]/../../..//p-dropdown//label
+RecContactlabelsXpath=//label[contains(text(),'<fieldName>')]
+RecContacttextfieldsXpath=//label[contains(text(),'<fieldName>')]/../../..//input
+RecContacttextareafieldsXpath=//label[contains(text(),'<fieldName>')]/../../..//textarea
+RecCntSectionxpath= //span[@class='ui-accordion-toggle-icon pi pi-fw pi-caret-right']//following::h2[@class='ng-star-inserted'][contains(.,'Record Contact')]
+btnBackinViewActivity=//button[@class='btn btn-secondary ng-star-inserted' and text()='Back']
+btnOkinAlert=//p-header[@class='ng-star-inserted' and text()=' Alert ']//following::button[@class='btn btn-delete ng-star-inserted' and text()='Ok']
+RecContactdropdownvaluesXpath=//label[@for='<fieldname>']/following::div[@class='ui-dropdown-items-wrapper']/ul/li
+lstbxRecContactXpath=//label[contains(text(),'Call Direction')]/../../..//p-dropdown//label//..//input[@role='listbox']
+#Epic-NIM-17018
+PorposeofCallLabel=//label[contains(text(),' Purpose of Call ')]
+CallDirectionLabel=//label[contains(text(),' Call Direction ')]
+ContactTypeLabel=//label[contains(text(),' Contact Type ')]
+CommTypeLabel=//label[contains(text(),' Communication Type ')]
+ContOutcomeLabel=//label[contains(text(),' Contact Outcome ')]
+
+

@@ -1,0 +1,63 @@
+FilterImage= //div[@id='carePlanFilterSection']//button//i
+AddGoal= //button[contains(.,'Goal')]
+VerifyAddGoalPage= //nm-tile//div//h2[text()]
+PriorityValues= //label[contains(text(),'Priority')]//ancestor::nm-combobox//following-sibling::p-dropdown/div
+StatusValue= //label[contains(text(),'Status')]//ancestor::nm-input-label//following-sibling::p-dropdown/div
+StatusReasonValue= //label[contains(text(),'Status Reason')]//ancestor::nm-input-label//following-sibling::p-dropdown/div
+Submit= //button[text()='Submit']
+GoalsDropdown= //p-dropdown/div/label[text()='Please Select...']
+Wait_Goal= //div[@class='ui-dropdown-items-wrapper']
+SelectGoal= //div[@class='ui-dropdown-items-wrapper']/ul/li
+PriorityDropdown= //label[contains(text(),'Priority')]//ancestor::nm-combobox//following-sibling::p-dropdown/div/label[text()='Please Select...']
+Wait_Priority= //label[contains(text(),'Priority')]//ancestor::nm-combobox//following-sibling::p-dropdown/div/label[text()='Please Select...']//following-sibling::div//div[@class='ui-dropdown-items-wrapper']/ul
+SelectPriority= //div[@class='ui-dropdown-items-wrapper']/ul/li
+SelectedGoal= //label[contains(text(),'Goal')]//ancestor::nm-input-label//following-sibling::p-dropdown//label
+SelectedPriority= //label[contains(text(),'Priority')]//ancestor::nm-input-label//following-sibling::p-dropdown//label
+SelectedStartDate= //label[contains(text(),'Start Date')]//ancestor::nm-input-label//following-sibling::p-calendar//input
+ReasonForExtensionDropdown= //label[contains(text(),'Reason For Extension')]//ancestor::nm-input-label//following-sibling::p-dropdown//div/label[text()='Please Select...']
+Wait_ReasonForExtension= //label[contains(text(),'Reason For Extension')]//ancestor::nm-input-label//following-sibling::p-dropdown//following-sibling::div//div[@class='ui-dropdown-items-wrapper']
+SelectReasonForExtension= //label[contains(text(),'Reason For Extension')]//ancestor::nm-input-label//following-sibling::p-dropdown//following-sibling::div//div[@class='ui-dropdown-items-wrapper']/ul/li
+SelectedReasonForExtension= //label[contains(text(),'Reason For Extension')]//ancestor::nm-input-label//following-sibling::p-dropdown//label
+StatusText_NotStarted= //nm-input-label[contains(.,'Status')]//ancestor::nm-combobox//following-sibling::p-dropdown//div[@class='ui-dropdown-items-wrapper']//li[1]
+TargetEndDate= //p-table/div//tr/th[8]/span
+BreadCrumb =//nm-breadcrumb//li[2]/a[text()]
+TargetEndDate_Value= //p-table/div//tr[last()]/td[8]/span
+EditGoal= (//caption[contains(text(),'Goals')]/../../..//button)[1]
+PageHeader= //nm-tile//div//h2[text()]
+StatusText_InProgress= //label[contains(text(),'Status')]/../../..//li[2]
+ReasonForExtension= //nm-combobox//label[@for='reasonForExtension']
+EditGoalSUbmit= //button[text()='Submit']
+StatusText_Closed= //li//span[text()='Closed']
+Wait_StatusReason= //label[contains(text(),'Status Reason')]//ancestor::nm-input-label//following-sibling::p-dropdown//following-sibling::div//div[@class='ui-dropdown-items-wrapper']
+SelectStatusReason= //label[contains(text(),'Status Reason')]//ancestor::nm-input-label//following-sibling::p-dropdown//following-sibling::div//div[@class='ui-dropdown-items-wrapper']/ul/li
+StartDate = //label[@for='startDate']//ancestor::nm-input-label//following-sibling::p-calendar
+GridGoalValue = //p-table//div//tr[last()]/td[3]
+GridPriorityValue = //p-table//div//tr[last()]/td[2]
+GridStartDateValue = //p-table//div//tr[last()]/td[7]
+GridStatusValue = //p-table//div//tr[last()]/td[5]
+GridStatusReasonValue = //p-table//div//tr[last()]/td[6]
+SecRow =//nm-table//p-table/div//tr/td[1]/a/i
+ClosedDate =//p-table//div//tr[last()]/td[9]
+Filter = //div[@id='filterFunctionalitySection']//nm-button[1]
+Clear = //div[@id='filterFunctionalitySection']//nm-button[2]
+Back = //div[@id='filterFunctionalitySection']//nm-button[3]
+//------------GoalHistorypage---------------
+//---------------------------- Goal history columns data validation -----------------------------------//
+validatingdataunderGoalcolumn=//div/nm-table/div/p-table/div/div/table/tbody/tr[1]/td[1]/span
+validatingdataunderTargetEndDatecolumn=//div/nm-table/div/p-table/div/div/table/tbody/tr[1]/td[2]/span/span
+validatingdataunderReasonforExtensioncolumn=//div/nm-table/div/p-table/div/div/table/tbody/tr[1]/td[3]
+validatingdataunderUpdatedbyUsercolumn=//div/nm-table/div/p-table/div/div/table/tbody/tr[1]/td[4]/span/span
+validatingdataunderUpdatedDatecolumn=//div/nm-table/div/p-table/div/div/table/tbody/tr[1]/td[5]/span/span
+validatingdataunderPrioritycolumn=//div/nm-table/div/p-table/div/div/table/tbody/tr[1]/td[6]/span/span
+BackbuttonInGoalHistoryPage=//button[text()='Back']
+GoalColumnValidation=//span[@class='ng-star-inserted'][contains(.,'Goal')]
+TargetEndDateValidation=//span[@class='ng-star-inserted'][contains(.,'Target')]
+ReasonForExtensionValidation=//span[@class='ng-star-inserted'][contains(.,'Extension')]
+UpdatedByUserValidation=//span[@class='ng-star-inserted'][contains(.,'by User')]
+UpdatedDateValidation=//span[@class='ng-star-inserted'][contains(.,'Updated Date')]
+BackButton=//div/nm-button-group/div/nm-button/button
+GoalHistoryIcon=//button[@title='Goal History']//..//i
+GoalHistoryValidation=//a[text()='Goal History']
+ValidatingGOALHISTORYGrid=//html/body/app-root/ng-component/div/div/ng-component/div/nm-page-content/nm-tile/div/div/div/nm-section/div/nm-form/form/nm-frm-grp/div/nm-element/div/nm-table/div/div/p-header
+lblSelectIntervention=//label[contains(text(),'Select Intervention')]/../../..//p-dropdown
+drpSelectInterventionvalue=//label[contains(text(),'Select Intervention')]/../../..//p-dropdown//li[<value>]/span

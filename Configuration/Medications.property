@@ -1,0 +1,26 @@
+gridHeader= //caption[contains(text(),'Current Medications')]
+CheckBox= //p-table/div//nm-header-checkbox//div[1]
+ReviewButton= //button[contains(text(),'Review')]
+AllMedications= //div[2]/p-radiobutton//div[2]
+AllMedHeader= //caption[contains(text(),'All Medications')]
+ClickMed= //div/h2/button
+AddMed=//div//button[contains(.,'Add Medication')]
+MedSearchTerm= //label[contains(text(),'Medication Search Term')]
+drugName= //*[@id='drugName']
+SearchButton= //button[text()='Search']
+SearchResults= //caption[text()='Search Results']
+OpenDrug= //div//span//div/button
+Selectdrug= //button[@title = 'Select'  and @type = 'button']
+AddMedSubmit= //button[text()='Submit']
+VerifyMed= //p-table//following-sibling::td//div//following::td//span[@title='PRAVACHOL']
+EditMed= //tr[1]//button[@title = 'Edit Medication'  and @type = 'button']
+UpdateMedSubmit= //button[text()='Submit']
+VerifyUpdate= //button[@title ='Edit Medication' and @type = 'button']
+VerifyHistory= //td[11]//button
+MedView= //p-table/div//table/tbody/tr[1]/td/a
+ViewHistory= //span//button[@title='View History']
+MedicationsHistoryGridHeader= //caption[contains(text(),'Medication History')]
+HistorySecRow= //p-table/div/div/table/tbody//ancestor::tr//following-sibling::a
+ClickFirstCheckBox= //p-table/div//tr[1]//p-tablecheckbox/div
+ReviewedDate= //p-table/div//tr/td[3]//span
+ClickSearchButton=//button[contains(text(),'Search')]

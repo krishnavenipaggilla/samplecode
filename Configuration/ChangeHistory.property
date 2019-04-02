@@ -1,0 +1,11 @@
+Dropdown=//div/div[2]/div/nm-section[1]/div/nm-combobox/p-dropdown/div/label
+ContactHistoryInDropdown=//span[contains(.,'Contact History')]
+
+//------- Data validation in Contact History Grid--------------//
+
+Program=//div/nm-section[2]/div/nm-table/div/p-table/div/div/table/thead/tr/th[2]/span
+ActivityTypeColumn=//div/nm-table/div/p-table/div/div/table/thead/tr/th[3]/span
+MemberReached=//div/nm-table/div/p-table/div/div/table/thead/tr/th[4]/span
+DateandTimeCompleted=//div/nm-table/div/p-table/div/div/table/thead/tr/th[5]/span
+PerformedBy=//div/nm-table/div/p-table/div/div/table/thead/tr/th[6]/span
+Role=//div/nm-table/div/p-table/div/div/table/thead/tr/th[7]/span

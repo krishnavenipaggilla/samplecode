@@ -1,0 +1,11 @@
+AddActivityBtn=//button[@title='Add Activity']
+ViewActivityimage=//span[@title='Care Coordination']//following::a[@class='fa fa-eye ng-star-inserted']
+EditActivityimage=//span[@title='Care Coordination']//following::a[@class='fa fa-pencil-square-o pull-right ng-star-inserted']
+CCActivity=//span[@title='Care Coordination']
+CCStatus=(//span[@title='Care Coordination']//following::td)[1]//span
+Question=//div//label[contains(text(),'Yes')]
+CCactivityName=//div[@class='ng-star-inserted col-sm-12 activityIcon h5 font-weight-bold p-0 clearfix col-sm-3']//div//span
+PrimaryCondition=(//label[contains(text(),'Condition')])[1]//following-sibling::div
+Risk=(//label[contains(text(),'Risk')])[1]//following-sibling::div
+Correspondencesection=//p-accordiontab//div//a//following::h2[contains(text(),'Correspondence')]
+Providersection=//p-accordiontab//div//a//following::h2[contains(text(),'Provider')]

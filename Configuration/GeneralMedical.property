@@ -1,0 +1,109 @@
+
+//**********verifyGramsToLbOzConversion**********//
+CurrentWeightInGmEnteredFromUIXpath = //p[contains(text(),'Current Weight')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//following-sibling::pre
+
+birthWeightInGmEnteredFromUIXpath = //p[contains(text(),'Birth Weight')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//following-sibling::pre
+
+LbFromUIForBirthWeightElementXpath = //p[contains(text(),'Birth Weight')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//label[contains(text(),'Lb')]//parent::nm-input-label//following-sibling::p
+
+
+OZFromUIForBirthWeightElementXpath = //p[contains(text(),'Birth Weight')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//label[contains(text(),'Oz')]//parent::nm-input-label//following-sibling::p
+
+LbFromUIForCurrentWeightElementXpath = //p[contains(text(),'Current Weight')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//label[contains(text(),'Lb')]//parent::nm-input-label//following-sibling::p
+
+OZFromUIForCurrentWeightElementXpath = //p[contains(text(),'Current Weight')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//label[contains(text(),'Oz')]//parent::nm-input-label//following-sibling::p
+
+//**********verifyCurrentGestationalAge**********//
+WeeksOfGestationalAgeOfBirthElementXpath = //p[contains(text(),'Gestational Age at Birth')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//following-sibling::pre
+
+DaysOfGestationalAgeOfBirthElementXpath = //p[contains(text(),'Gestational Age at Birth')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//following-sibling::pre
+
+DobFromCaseBannerElementXpath = //nm-card-details//label[contains(text(),'DOB')]//parent::div//child::span
+
+WeeksForCurrentGestAgeFromUIElementXpath = //p[contains(text(),'Current Gestational Age')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//label[contains(text(),'Weeks')]//parent::nm-input-label//following-sibling::p
+
+DaysForCurrentGestAgeFromUIElementXpath = //p[contains(text(),'Current Gestational Age')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input-label//label[contains(text(),'Days')]//parent::nm-input-label//following-sibling::p
+
+
+
+//**********highlightFieldBasedOnValues**********//
+WarningMessageElementForChildGrowthTrackingXpath = //nm-element //legend[contains(text(),\"Child's Growth Tracking (According to CDC Growth Charts)\")]//ancestor::nm-element//following-sibling::nm-message//span[contains(text(),'CM: Attention Required')]
+
+WarningMessageElementForERVisitSinceLastNICURNXpath = //nm-element //legend[contains(text(),'ER visits since last NICU RN outreach')]//ancestor::nm-element//following-sibling::nm-message//span[contains(text(),'CM: Attention Required')]
+
+WarningMessageElementForHospReadmissionXpath = //nm-element //legend[contains(text(),'Hospital Readmissions since last NICU RN outreach')]//ancestor::nm-element//following-sibling::nm-message//span[contains(text(),'CM: Attention Required')]
+
+WarningMessageElementForChildCurrentHealthConcernsXpath = //nm-element //label[contains(text(),\"Child's Current Health Concerns\")]//ancestor::nm-element//following-sibling::nm-message//span[contains(text(),'CM: Attention Required')]
+
+WarningMessageElementForChildVisionImpairmentXpath = //nm-element //label[contains(text(),\"Child's Vision Impairement\")]//ancestor::nm-element//following-sibling::nm-message//span[contains(text(),'CM: Attention Required')]
+
+WarningMessageElementForChildHearingImpairmentXpath = //nm-element //label[contains(text(),\"Child's Hearing Impairement\")]//ancestor::nm-element//following-sibling::nm-message//span[contains(text(),'CM: Attention Required')]
+
+WarningMessageElementForChildAllergies = //nm-element //label[contains(text(),\"Child's Allergies\")]//ancestor::nm-element//following-sibling::nm-message//span[contains(text(),'CM: Attention Required')]
+
+WarningMessageElementForChildHealthConditions = //nm-element //label[contains(text(),\"Good Understanding of Child's Health Conditions\")]//ancestor::nm-element//following-sibling::nm-message//span[contains(text(),'CM: Attention Required')]
+
+//************verifyDisplayConfirmationOnSubmit/Back**********//
+GMInputXpath = //p[contains(text(),'Current Weight')]//ancestor::nm-frm-grp//following-sibling::nm-frm-grp[1]//nm-input//label[contains(text(),"Gm")][1]//following::input[1]
+
+UpdatesSavedElementXpath = //div[@class = 'ui-toast-detail'and contains(text(),'Updates Saved')]
+
+UpdatesCancelledElementXpath = //div[@class = 'ui-toast-detail'and contains(text(),'Updates Cancelled')]
+
+//**********viewMetadataForChartUpdates2**********//
+ProgramNameFromBannerXpath = //label[contains(text(),'Program Name')]//..//parent::div//child::div//span
+
+
+UserNameOnUI = //label[contains(text(),'Case Owner')]//parent::div//following-sibling::div//span
+
+//**********verifyShowHideHistory()**********//
+showHistoryElements = //button[contains(text(), 'Show History')]
+showHistoryElement = (//button[contains(text(), 'Show History')])[instanceNumber]
+
+tableHeaders = //div[not(@hidden)]/parent::nm-table//th
+
+hideHistoryElement = //button[contains(text(), 'Hide History')]
+
+
+//**********viewHistoryGridWithDOSLoop**********//
+gridHeaderText = //div[not(@hidden)]/parent::nm-table//p-header
+
+actualColumnHeaders = //nm-element//div[not(@hidden)]//nm-table//th/span
+
+lastModifiedElements = //button[contains(text(), 'Hide History')]//ancestor::nm-frm-grp//preceding-sibling::nm-frm-grp//span[contains(text(), 'Modified')]
+
+questionElement = //parent::li/parent::ul/parent::div/parent::p-messages/parent::nm-message/parent::div//nm-input//label
+
+answersFromUIGrid = //div[not(@hidden)]/parent::nm-table//tbody//tr[position()=1]/td
+
+
+//**********numberOfRowsInGridForpagination**********//
+gmgridTitleElement = //div[not(@hidden)]/parent::nm-table//p-header
+gmgridRowsCount = //div[not(@hidden)]/parent::nm-table//tbody//tr
+
+//**********viewHistoryGrid**********//
+
+
+GMQuestionLabelXpath = //button[contains(text(), 'Hide History')]//ancestor::nm-frm-grp//preceding-sibling::nm-frm-grp[instance]//label[@for]
+
+GMQuestionLegendXpath = //button[contains(text(), 'Hide History')]//ancestor::nm-frm-grp//preceding-sibling::nm-frm-grp[instance]//legend
+
+
+
+
+//**********General Medical From Activity**********//
+GMAccordianClickFromActivity = //h2[contains(text(),'General Medical')]
+
+AddGMSubsectionFromActivity = //label[contains(text(),'General Medical')]//..//label
+
+GMtableHeadersFromActivity = //div[@class ='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//ancestor::nm-form//div[not(@hidden)]/parent::nm-table//th
+
+GMgridHeaderTextFromActivity = //div[@class ='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//ancestor::nm-form//div[not(@hidden)]/parent::nm-table//p-header
+
+GMactualColumnHeadersFromActivity = //div[@class ='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//ancestor::nm-form//nm-element//div[not(@hidden)]//nm-table//th/span
+
+GMQuestionLabelXpathFromActivity = //button[contains(text(), 'Hide History')]//..//..//..//preceding-sibling::nm-frm-grp[instance]//label[@for]
+
+GMQuestionLegendXpathFromActivity = //button[contains(text(), 'Hide History')]//..//..//..//preceding-sibling::nm-frm-grp[instance]//legend
+
+GMAnswersFromGridFromActivity = //div[@class ='ui-accordion-header ui-state-default ui-corner-all ui-state-active']//ancestor::nm-form//div[not(@hidden)]/parent::nm-table//tbody//tr[position()=1]/td

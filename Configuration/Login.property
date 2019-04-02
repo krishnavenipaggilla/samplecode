@@ -1,0 +1,11 @@
+**--Login Elements--**
+UserNamexpathProperty = //input[@name='username']
+PassWordxpathProperty = //input[@name='password']
+LoginButtonxpathProperty = //input[@value='Login']
+
+
+
+**----Back to home page WebElement-----*
+BackToHome = //a[text() = 'Activity Dashboard']
+---------------------------------------
+

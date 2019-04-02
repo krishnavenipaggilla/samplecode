@@ -1,0 +1,18 @@
+
+//added the new URL - AF21331
+
+#URL=https://va33dlvnim301.wellpoint.com:8443/cmproduct/login
+#SIT
+URL=https://va33tlvnim301.wellpoint.com:8443/cmproduct/login
+#Sandbox
+#URL=https://va33dlvnim301.wellpoint.com:9443/cmproduct/login
+#URL=https://va33tlvnim303.wellpoint.com:8443/cmproduct/login
+#URL=https://va33tlvnim300.wellpoint.com:10443/cm-hip/login#/h/view_CMLandingPage/cmLandingPage
+
+#Implementation SIT
+#URL=https://va33tlvnim300.wellpoint.com:10443/cm-hip/login?logout 
+
+ExecutionType = LOCAL
+#ExecutionType = LOCAL;REMOTE
+
+ExcelPath=./TestData/Credentials.xlsx

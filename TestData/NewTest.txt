@@ -1,0 +1,235 @@
+Invoke url to load member data from staging to mongodb:
+
+DEV:
+
+http://va33dlvnim300.wellpoint.com:8443/ltss-integration-services/member/data/_process/
+
+Sandbox Api:
+ 
+http://va33dlvnim300.wellpoint.com:9443/ltss-integration-services/member/data/_process/
+
+SIT API
+http://va33tlvnim300.wellpoint.com:8443/ltss-integration-services/member/data/_process/
+
+
+FACETS ELIGIBLE PLAN CODES:
+CSCSID	CSPIID	LOBID
+PL28	FLMMALDL	FLL1
+PL28	FLMMALND	FLL1
+PL28	FLMMALND	FLL1
+PL28	FLMMANDL	FLL1
+PL28	FLMMANND	FLL1
+PL28	FLMMLDAH	FLL1
+PL28	FLMMLDMP	FLL1
+PL28	FLMMLDNH	FLL1
+PL28	FLMMLNAH	FLL1
+PL28	FLMMLNMP	FLL1
+PL28	FLMMLNNH	FLL1
+PL28	FLMMLSXL	FLL1
+PL28	FLMMSLDL	FLL1
+
+CSCSID	CSPIID	LOBID
+PL27	FLMMLDAH	FLL1
+PL27	FLMMLDMP	FLL1
+PL27	FLMMLDNH	FLL1
+PL27	FLMMLNAH	FLL1
+PL27	FLMMLNMP	FLL1
+PL27	FLMMLNNH	FLL1
+PL27	FLMMLSXL	FLL1
+
+CSCSID	CSPIID	LOBID
+PL56	FLMMALND	FLL1
+PL56	FLMMANDL	FLL1
+PL56	FLMMANND	FLL1
+PL56	FLMMLDAH	FLL1
+PL56	FLMMLDMP	FLL1
+PL56	FLMMLDNH	FLL1
+PL56	FLMMLNAH	FLL1
+PL56	FLMMLSXL	FLL1
+PL56	FLMMLNNH	FLL1
+PL56	FLMMLNMP	FLL1
+
+
+PCP IDS
+01186144
+01968327
+01968327
+01077388
+01117544
+01105698
+01116950
+01880823
+01082736
+01186144
+01968327
+01968327
+01077388
+01117544
+01105698
+01116950
+01880823
+01082736
+01841341
+01085895
+01880823
+01879951 
+
+
+GROUP ID : FLMCD000
+
+
+Oracle Database Queries for Facets :
+
+SELECT sbsb.sbsb_id,meme.meme_ck,meme.sbsb_ck,mepe.mepe_eff_dt,mepe.mepe_term_dt,mepe.mepe_elig_ind FROM CMC_SBSB_SUBSC SBSB
+INNER JOIN CMC_MEME_MEMBER MEME ON MEME.SBSB_CK=SBSB.SBSB_CK
+INNER JOIN CMC_MEPE_PRCS_ELIG MEPE ON MEPE.MEME_CK=MEME.MEME_CK
+where sbsb.sbsb_id = '724171043'
+
+SELECT sbsb.sbsb_id,meme.meme_ck,meme.sbsb_ck,mepe.mepe_eff_dt,mepe.mepe_term_dt,mepe.mepe_elig_ind FROM CMC_SBSB_SUBSC SBSB
+INNER JOIN CMC_MEME_MEMBER MEME ON MEME.SBSB_CK=SBSB.SBSB_CK
+INNER JOIN CMC_MEPE_PRCS_ELIG MEPE ON MEPE.MEME_CK=MEME.MEME_CK
+INNER JOIN AGP.NIMBUS_GCP_CONFIG GCP ON GCP.CSCS_ID=MEPE.CSCS_ID
+and gcp.plan_id=mepe.cspi_id
+where sbsb.sbsb_id = '724171055'  
+
+
+GBD - AUTH SERVICES QUERIES:
+(below query is for GCP eligible members having authorizations)
+SELECT meme.meme_ck,sbsb.sbsb_id,meme.meme_first_name,meme.meme_last_name,meme.meme_birth_dt
+FROM CMC_MEME_MEMBER MEME 
+INNER JOIN CMC_SBSB_SUBSC SBSB ON SBSB.SBSB_CK=MEME.SBSB_CK
+INNER JOIN CMC_UMSV_SERVICES UMSV ON UMSV.MEME_CK=MEME.MEME_CK AND UMSV.UMSV_TO_DT>SYSDATE
+and UMVT_STS='CO'
+INNER JOIN CMC_GRGR_GROUP GRGR ON GRGR.GRGR_CK=MEME.GRGR_CK AND GRGR.GRGR_CK=3
+JOIN CMC_MEPE_PRCS_ELIG MEPE ON MEPE.MEME_CK=MEME.MEME_CK AND MEPE.MEPE_ELIG_IND='Y'
+join agp.nimbus_gcp_config gcp on gcp.plan_id=mepe.cspi_id
+
+(below query is for authorization details for that auth ids)
+select * from cmc_umsv_services 
+
+(below query is for getting the list of LOC dates for all members)
+select * from AGP.ltss_loc
+
+(below query is for getting the LOC dates for GCP members)
+SELECT meme.meme_ck,sbsb.sbsb_id,meme.meme_first_name,meme.meme_last_name,meme.meme_birth_dt
+,a.LOCDATE,a.loc_desc
+FROM CMC_MEME_MEMBER MEME 
+inner join cmc_sbsb_subsc sbsb on sbsb.sbsb_ck=meme.sbsb_ck
+inner join agp.nimbus_cmdm_daily_elig_archive a on meme.meme_ck=a.memberck
+INNER JOIN CMC_GRGR_GROUP GRGR ON GRGR.GRGR_CK=MEME.GRGR_CK AND GRGR.GRGR_CK=3
+inner join (SELECT LOC_EFF_DT AS LOCDATE,loc_desc as LOC_DESC,MEME_CK AS MEME_CK
+FROM 
+(SELECT MEME_CK,LOC_EFF_DT,loc_code_ck1,ROW_NUMBER() OVER(PARTITION BY MEME_CK ORDER BY LOC_EFF_DT DESC )RN
+FROM AGP.LTSS_LOC LOC
+)
+A 
+LEFT JOIN AGP.LTSS_LOC_CODE CODE ON CODE.LOC_CODE_CK=A.LOC_CODE_CK1
+WHERE RN=1)
+a on a.meme_ck=meme.meme_ck
+
+
+
+Query given by Tony:
+https://devs-gbd-soa-services.anthem.com/HQNextGenWS/services/athena20/NextGenAppeal?wsdl
+
+
+query for getting the phone numbers - 
+
+select  
+SBSB.SBSB_ID,
+SBAD.SBAD_PHONE,SBAD.SBAD_PHONE_EXT,SBAD.SBAD_FAX,SBAD.SBAD_FAX_EXT
+from 
+   FACETS.CMC_MEME_MEMBER MEME 
+INNER JOIN 
+(SELECT memberck,grgrck FROM AGP.NIMBUS_ELIG_CH_TEMP
+UNION
+SELECT MEMBERCK,GRGRCK from AGP.NIMBUS_PCP_CH_TEMP
+UNION
+SELECT MEMBERCK,GRGRCK FROM AGP.NIMBUS_ADDR_CH_TEMP
+UNION
+SELECT MEMBERCK,GRGRCK FROM AGP.NIMBUS_DISENROLL_TEMP
+)TEMP ON TEMP.MEMBERCK=MEME.MEME_CK 
+INNER JOIN FACETS.CMC_SBSB_SUBSC SBSB ON SBSB.SBSB_CK=MEME.SBSB_CK 
+inner join FACETS.CMC_SBAD_ADDR SBAD ON SBAD.SBSB_CK=SBSB.SBSB_CK 
+
+_then use the below one SELECT *from
+(select SBSB.SBSB_ID
+,row_number() over(partition by meme.meme_ck order by mepe.mepe_create_dtm desc, mepe.mepe_term_dt desc)RN
+,meme.meme_cell_phone
+,meme.meme_wrk_phone
+ from
+ FACETS.CMC_GRGR_GROUP GRGR
+ INNER JOIN   FACETS.CMC_MEME_MEMBER MEME ON MEME.GRGR_CK=GRGR.GRGR_CK and GRGR.GRGR_CK IN (SELECT DISTINCT GRGR_CK FROM AGP.NIMBUS_GCP_CONFIG where IS_LOADED=1)
+INNER JOIN FACETS.CMC_SBSB_SUBSC SBSB ON SBSB.SBSB_CK=MEME.SBSB_CK 
+INNER JOIN 
+(SELECT memberck,grgrck FROM AGP.NIMBUS_ELIG_CH_TEMP
+UNION
+SELECT MEMBERCK,GRGRCK from AGP.NIMBUS_PCP_CH_TEMP
+UNION
+SELECT MEMBERCK,GRGRCK FROM AGP.NIMBUS_ADDR_CH_TEMP
+UNION
+SELECT MEMBERCK,GRGRCK FROM AGP.NIMBUS_DISENROLL_TEMP
+)TEMP ON TEMP.MEMBERCK=MEME.MEME_CK 
+INNER JOIN FACETS.CMC_MEPE_PRCS_ELIG MEPE ON MEPE.MEME_CK=MEME.MEME_CK 
+and MEPE.MEPE_CREATE_DTM>SYSDATE - 10000
+and MEPE.MEPE_ELIG_IND='Y'
+AND ((SYSDATE BETWEEN MEPE.MEPE_EFF_DT AND MEPE.MEPE_TERM_DT) or MEPE.MEPE_EFF_DT>SYSDATE)
+INNER JOIN AGP.NIMBUS_GCP_CONFIG GCP ON GCP.PLAN_ID=MEPE.CSPI_ID AND GCP.CSCS_ID=MEPE.CSCS_ID
+
+)TAB
+WHERE  RN=1
+__________________________________________________________________________
+
+
+
+On Facets:
+
+For adding new subscriber ID, member :
+Go to Subscriber/Member ----> Enrollment---> File Open---> New ---> Enter eligibility and than fill all other details.
+Go to Quick PCP to enter PCP info.
+
+
+For Searching about Auth Ids -
+Go to subscriber/Family, Click open - enter subscriber id. Click on Transfer and click on Prospective UM. Click on History tab on side. It will give the Auth Ids related to that subscriber ID. Clicking each one willl open each auth id.
+
+
+TO open any subscriber ID - Click Subscriber/Member group and than Subscriber/Family group
+
+To add any PCP - cLICK Quick PCP
+To update any PCP - cLICK Provider section/ than Practitioner section and than File - open .and enter the PCP ID.
+
+To directly look for Auth ID :
+Go to Utilization management ---> Prospective UM---> FILE --->Open---> Give the Auth or Ref ID.
+
+
+C:\oracle\product\11.2.0\client_1\network\admin
+tnsnames.ora
+
+va1oid01.corp.agp.ads:389:636 
+
+FAC3Q=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=va01ddbsfac001)(PORT=1535))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=FAC3Q.corp.agp.ads)))
+FAC4Q=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=va01ddbsfac001)(PORT=1534))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=FAC4Q.corp.agp.ads)))
+FAC1Q=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=va01ddbsfac001)(PORT=1524))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=FAC1Q.corp.agp.ads))) 
+LDAP: va01ddbsfac001.corp.agp.ads:1534  
+
+
+Tidal Job :
+
+Login : US\AF53013
+password : system password
+
+Tidal Job for DEV -
+http://tidaldev.corp.agp.ads/client/console.html?locale=en
+Search -  MER364
+
+Tidal job for QA Env-
+http://tidalqa.corp.agp.ads/client/console.html?locale=en%20http://tidalqa.corp.agp.ads/client/console.html?locale=en
+Search -
+SIT - MER364B
+PERF - MER364A
+UAT - MER364C
+
+MER364B_1D00_NIMBUS_LTSS_Enrollment_SIT
+
+
+FACETS PROFILE FOR QA env - ENBSPR 

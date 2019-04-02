@@ -1,0 +1,21 @@
+ActivityList=//a//span[text()='Activities']
+EditInitial=(//span[@title='Initial Outreach']//following::a)[1]
+Alert=//button[text()='Ok']
+ClinicalActivity=//span[@title='Clinical Intervention']
+ClinicalStatus=(//span[@title='Clinical Intervention']//following::td)[1]//span
+InitialStatus=(//span[@title='Initial Outreach']//following::td)[1]//span
+ClinicalEdit=(//span[@title='Clinical Intervention']//following::a)[1]
+Program=(//label[contains(text(),'Program')])[2]//following-sibling::div//span
+Editstatus=(//label[contains(text(),'Status')])[2]//following-sibling::div//span
+assignedto=(//label[contains(text(),'Assigned To')])[1]//following-sibling::div//span
+Activityname=(//label[contains(text(),'Activity Name')])[1]//following-sibling::div//span
+Startdate=(//label[contains(text(),'Start Date')])[1]//following-sibling::div
+Duedate=(//label[contains(text(),'Due Date')])[1]//following-sibling::div
+introsection=(//p-accordiontab//div//a//following::h2[contains(text(),'Intro & Permissions')])
+memberSection=//p-accordiontab//div//a//following::h2[contains(text(),'Member Representatives')]
+Careplansection=//p-accordiontab//div//a//following::h2[contains(text(),'Care Plan')]
+Questionnairesection=//p-accordiontab//div//a//following::h2[contains(text(),'Questionnaires')]
+Recordsection=//p-accordiontab//div//a//following::h2[contains(text(),'Record Contact')]
+AddActivity=//h2[contains(text(),'Add Activity')]
+CliActivityGrid=((//span[@title='Clinical Intervention'])[1]//following::td)[1]
+

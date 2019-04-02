@@ -1,0 +1,29 @@
+//**********Conditions Page******************//
+ConditionsGridHeaderXpath = //p-header//caption[contains(text(),'Conditions')]
+
+AddConditionLinkXpath = //button[contains(.,'Add Condition')]
+
+AddConditionPageHeaderXpath = //h2[contains(.,'Add Condition')]
+EditConditionPageHeaderXpath = //h2[contains(.,'Edit Condition')]
+
+MainFocusXpath =  //div//p-header//caption[contains(text(),'Conditions')]//ancestor::nm-table//thead//th//span[contains(text(),'Primary')]//ancestor::table//following-sibling::tbody/tr[1]//td[1]//span[@class = 'fieldValue']
+
+ConditionXpath = //div//p-header//caption[contains(text(),'Conditions')]//ancestor::nm-table//thead//th//span[contains(text(),'Condition')]//ancestor::table//following-sibling::tbody/tr[1]//td[2]//span[@class = 'fieldValue']
+
+DiagnosisOnsetDateXpath = //div//p-header//caption[contains(text(),'Conditions')]//ancestor::nm-table//thead//th//span[contains(text(),'Diagnosis/Onset Date')]//ancestor::table//following-sibling::tbody/tr[1]//td[3]//span[@class = 'fieldValue']
+
+ResolvedDateXpath = //div//p-header//caption[contains(text(),'Conditions')]//ancestor::nm-table//thead//th//span[contains(text(),'Resolved Date')]//ancestor::table//following-sibling::tbody/tr[1]//td[5]//span[@class = 'fieldValue']
+
+ClinicalStatusXpath = //div//p-header//caption[contains(text(),'Conditions')]//ancestor::nm-table//thead//th//span[contains(text(),'Clinical Status')]//ancestor::table//following-sibling::tbody/tr[1]//td[4]//span[@class = 'fieldValue']
+
+VerificationStatusXpath = //div//p-header//caption[contains(text(),'Conditions')]//ancestor::nm-table//thead//th//span[contains(text(),'Verification Status')]//ancestor::table//following-sibling::tbody/tr[1]//td[6]//span[@class = 'fieldValue']
+
+RiskXpath= //div//p-header//caption[contains(text(),'Conditions')]//ancestor::nm-table//thead//th//span[contains(text(),'Risk')]//ancestor::table//following-sibling::tbody/tr[1]//td[7]//span[@class = 'fieldValue']
+
+SourceXpathForCondition = //div//p-header//caption[contains(text(),'Conditions')]//ancestor::nm-table//thead//th//span[contains(text(),'Source')]//ancestor::table//following-sibling::tbody/tr[1]//td[8]//span[@class = 'fieldValue']
+
+***************edit conditions********************
+
+EditIconForFirstConditionXpath = //p-header//caption[contains(text(),'Conditions')]//parent::p-header//parent::div//following-sibling::p-table//descendant::table//tbody//tr[1]//i
+
+MainFocusYesElementsXpath = //div//p-header//caption[contains(text(),'Conditions')]//ancestor::nm-table//thead//th//span[contains(text(),'Primary')]//ancestor::table//following-sibling::tbody/tr//td[1]//span[contains(text(),'true')]

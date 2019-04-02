@@ -1,0 +1,13 @@
+**-----Member Management Reason WebElements------**
+AddMgmtReasonLinkXpath = //button[contains(.,'Add Mgmt Reason')]
+EditManagementReasonXpath=(//table//tbody//tr//td//span[@title = 'NICU']//parent::td//following-sibling::td//a[@class = 'fa fa-pencil-square-o pull-right ng-star-inserted'])[1]
+AddSupplementalInfoLinkXpath=//button[contains(.,'Add Supplemental Info')]
+DropdownArrowForFilterTypeOnManagementReasonXpath=//div[@class='ui-dropdown-trigger ui-state-default ui-corner-right']/span
+FilterButtonXpath=//button[contains(text(),'Filter')]
+****--------ADDING MORE XPATHS------***
+AddMgmtReasonMsgsXpath = //nm-element//nm-paragraph//p[contains(text(),'This Management Reason already exists for this Program Type.')]
+TextAreaLabelElementXpath = //label[contains(text(),'Note Description')]
+NoteAreaXpath =(//label[contains(text(),'Note Description')])[1]//parent::nm-input-label//following-sibling::textarea
+SupplementalGridHeaderElementXpath =(//p-header//caption[contains(text(),'Supplemental Info')])[1]
+ManagementReasonGridHeaderElementXpath = (//p-header//caption[contains(text(),'Management Reason')])[1]
+ProgramTypeWebElementsXpath = //th[span='Program Type']//ancestor::thead//following-sibling::tbody//tr//td[2]

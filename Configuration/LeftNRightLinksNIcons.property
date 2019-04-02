@@ -1,0 +1,87 @@
+//********** Left navigation Elements- breadcrumbs or titles **********//
+Overview=//a[contains(text(),'Overview')]
+OverviewLink = //a/span[text()='Overview']
+
+Search=//a[contains(text(),'Search')]
+
+HealthChartLink = //a/span[text()='Health Chart']
+
+GeneralMedical=//a[contains(text(),'General Medical')]
+GeneralMedicalLink = //a/span[text()='General Medical']
+
+ManagementReason=//a[contains(text(),'Management Reasons')]
+ManagementReasonLink = //a/span[text()='Management Reason']
+
+Notes=//a[contains(text(),'Notes')]
+NotesLink = //a/span[text()='Notes']
+
+Activities = //a[contains(text(),'Activities')]
+ActivitiesLink = //a/span[text()='Activities']
+
+Documents=//a[contains(text(),'Documents')]
+DocumentsLink = //a/span[text()='Documents']
+
+Admissions = //a[contains(text(),'Admissions')]
+AdmissionsLink = //a/span[text()='Admissions']
+
+LifestyleAndPrevention = //a[contains(text(),'Lifestyle and Prevention')]
+LifestyleAndPreventionLink = //a/span[text()='Lifestyle and Prevention']
+
+
+CarePlan = //a[contains(text(),'Care Plan')]
+CarePlanLink = //a/span[text()='Care Plan']
+
+ContactHistory = //h1[contains(text(),'Contact History')]
+
+Barriers = //a[contains(text(),'Barriers')]
+BarriersLink = //a/span[text()='Barriers']
+
+MemberActionCenterLink = //a/span[text()='Member Action Center']
+
+MedicationsLink = //a/span[text()='Medications']
+Medications = //a[contains(text(),'Medications')]
+
+Interventions = //a[contains(text(),'Interventions')]
+InterventionsLink = //a/span[text()='Interventions']
+
+CaseHistory=//h1[contains(text(),'Case History')]
+
+Conditions = //a[contains(text(),'Conditions')]
+ConditionsLink = //a/span[text()='Conditions']
+
+Immunizations = //a[contains(text(),'Immunizations')]
+ImmunizationsLink = //a/span[text()='Immunizations']
+
+ChangeHistory = //a[contains(text(),'Change History')] 
+ChangeHistoryLink = //a/span[text()='Change History']
+
+CareTeam = //a[contains(text(),'Care Team')] 
+CareTeamLink = //a/span[text()='Care Team']
+
+QuestionnaireHistoryLink=//a/span[text()='Questionnaires History']
+QuestionnaireHistory = //a[contains(text(),'Questionnnaires History')]
+
+PrintLink = //a//span[text()='Print']
+Print = //a[text()='Print']
+
+//********** Right action tray elements - titles/breadcrumbs **********//
+
+RecordAContactIcon=//button[@title ='Record a Contact']//i
+RecordAContact=//a[contains(text(),'Contact Details')]
+
+AddActivityIcon = //button[@title = 'Add Activity']//svg-icon
+AddActivity = //a[contains(text(),'Add Activity')]
+
+UploadFilesIcon = //button[@title = 'Upload Files']//i
+UploadFiles = //a[contains(text(),'Document Upload')]
+
+AddNotesIcon = //button[@title = 'Add Notes']//i
+AddNotes = //a[contains(text(),'Add Note')]
+
+CaseClosureIcon = //button[@title = 'Case Closure']//i
+CaseClosure = //p-header[contains(text(),'Case Closure Confirmation')]
+
+RequestAuditPackageIcon = //button[@title = 'Request Audit Package']//i
+RequestAuditPackage = //p-header[contains(text(),'Request Audit Package')]
+
+

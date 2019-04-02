@@ -1,0 +1,14 @@
+LSPBreadCrumb =//nm-breadcrumb//li[2]/a[text()]
+LSPHeader =//nm-label/h2[text()]
+SourceDrop-down =//nm-input-label//label[@for='source']
+SourceValue =(//nm-input-label/label[@for='source']//ancestor::nm-combobox//p-dropdown//label)[1]
+LSPSubmit =//button[text()='Submit']
+ShowHistoryClick =//button[text()='Show History']
+ShowHistoryHeader =//nm-table//div//p-header
+SuccessMessage_Summary =//div/div[@class='ui-toast-summary']
+SuccsssMessage_Details =//div//div[@class='ui-toast-details']
+
+//**********LifeStyle N Prevention - Diet Nutrition n Exercise **********//
+childFeedingMethodElement = //button[contains(text(), 'Hide History')]//ancestor::nm-frm-grp//preceding-sibling::nm-frm-grp[3]//label[@for]
+
+specialDietFormulaNeedsElement = //button[contains(text(), 'Hide History')]//ancestor::nm-frm-grp//preceding-sibling::nm-frm-grp[3]//legend

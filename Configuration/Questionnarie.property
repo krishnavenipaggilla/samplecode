@@ -1,0 +1,27 @@
+MemberActionCenter_xpath = //span[contains(text(),'Member Action Center')]
+Activities_xpath = //span[contains(text(),'Activities')]
+InitialOutreach_edit_xpath = //span[contains(text(),'Initial Outreach')]//ancestor::td//following-sibling::td//nm-link/a[@class='fa fa-pencil-square-o pull-right ng-star-inserted']
+Questionnaires_xpath = //h2[contains(text(),'Questionnaire')]
+AddQuestionnaires_xpath = //button[contains(text(),'Add Questionnaire')]
+#AddQuestionnaires_dropdown_xpath = //p-header[contains(text(),'Add Questionnaire')]//parent::span/parent::div//following-sibling::div//p-dropdown/div
+#AddQuestionnaires_dropdown_xpath =(//label[contains(text(),'Please Select...')])[22]//following-sibling::div
+AddQuestionnaires_dropdown_xpath =//label[contains(text(),' Questionnaire Name ')]//parent::nm-input-label//following-sibling::p-dropdown/div
+Newborn_xpath = //li//span[contains(text(),'Newborn Assessment')]
+#AddQuestionnaire_Save_xpath = //p-header[contains(text(),'Add Questionnaire')]//parent::span/parent::div//following-sibling::div//button[contains(text(),'Save')]
+AddQuestionnaire_Save_xpath =//button [text()='Save']
+Toodler_xpath = //li//span[contains(text(),'Toddler Assessment')]
+
+Questionnaires_History_xpath = //span[contains(text(),'Questionnaires History')] 
+Questionnaires_Caption_xpath = //p-header/caption
+
+ToddlerAssessment_xpath = //span[@title='Toddler Assessment']//parent::td//following-sibling::td//button
+SaveAsDraft_xpath = //button[text()='Save as Draft']
+
+DiscardDraft_xpath = //button[text()='Discard Draft']
+WindowText_xpath = //label[contains(text(),'Are you sure you want to discard this Assessment?')]
+PopUpWindowNo_xpath = //button[text()='No']
+PopUpWindowYes_xapth = //button[text()='Yes']
+
+NewbornAssessment_xpath = //span[@title='Newborn Assessment']//parent::td//following-sibling::td//button
+SubmitasFinal_xpath = //button[text()='Submit as Final']
+

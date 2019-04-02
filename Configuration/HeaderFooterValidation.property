@@ -1,0 +1,13 @@
+SiteMap=//a[contains(text(),'Site Map')]
+TermsofUse=//a[contains(text(),'Terms Of Use')]
+ProctedMarks=//a[contains(text(),'Protected Marks')]
+PrivacyPolicy=//a[contains(text(),'Privacy Policy')]
+SSLCertification=//img[@alt='SSL Certificate from']
+
+//AnthemLogo=//img[@alt='Anthem']
+CMDM=//p[contains(text(),'Nimbus CM/DM')]
+UserImage=//i[@class='fa fa-user userIcon']
+UserName=//div[@class='userName']
+UserRole=//div[@class='userRole']
+LogOut=//a[contains(text(),'Log Out')]
+//FloridaMarket=//div[contains(text(),'Florida Market')]

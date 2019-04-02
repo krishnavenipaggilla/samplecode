@@ -1,0 +1,44 @@
+MemberActionCenterClickXpath=//span[contains(text(),'Member Action Center')]
+ActivitiesUnderMemberActionCenter=//span[contains(text(),'Activities')]
+EditMemberActionCenter= //a[contains(@class,'fa fa-pencil-square-o pull-right ng-star-inserted')]
+ClickOnProvider= //h2[contains(text(),'Provider')]
+ExpandProvider=//p-accordiontab[.//h2[text()='Provider']]//span[contains(@class,'pi-caret-right')]
+AddProvider=//div[@id='providerSubSection']//button[contains(text(),' Add Provider ')]
+AddProviderFirstXpath=//div[@class='text-sm-right buttonGroup']//button[contains(text(),' Add Provider ')]
+AddProviderXpath=//div[@id='accordiansSection']//p-accordion//p-accordiontab[2]//nm-button/button[contains(text(),' Add Provider ')]
+IndividualXpath=//label[contains(text(),'Individual')]
+ProviderIDXpath=//input[@id='providerId']
+OrganizationNameXpath=//input[@id='organizationName']
+FirstName1Xpath=//input[@id='firstName']
+LastName1Xpath=//input[@id='lastName']
+ProviderGenderXpath=//label[contains(text(),'Male')]
+LanguageDropdownXpath=//label[contains(text(),'Language')]/following-sibling::p-dropdown
+LanguageChoiceXpath=//span[contains(text(),'American Sign Language')]
+TitleDropdownXpath=//label[@for='title'and @class='ng-star-inserted']/following-sibling::p-dropdown
+TitleChoiceXpath=//label[@for='title'and @class='ng-star-inserted']/following-sibling::p-dropdown/div//span[text()='<DISPLAYED_TEXT>']
+ProviderSpecialtyDropdownXpath=//label[contains(text(),'Provider Specialty')]/following-sibling::p-dropdown
+ProviderSpecialtyChoiceXpath=//label[contains(text(),'Provider Specialty')]/following-sibling::p-dropdown//ul/li[3]
+NPIXpath=//input[@id='npi']
+DEAXpath=//label[contains(text(),'DEA#')]/following-sibling::input
+TaxIDXpath=//label[contains(text(),'Tax ID')]/following-sibling::input
+PhoneNumber1Xpath=//label[@class='required ng-star-inserted'][contains(text(),'Phone')]/following-sibling::input
+FaxXpath=//label[contains(text(),'Fax')]/following-sibling::input
+EmailXpath=//label[contains(text(),'Email')]/following-sibling::input
+AddressLine1Xpath=//label[contains(text(),'Address Line 1')]/following-sibling::input
+AddressLine2Xpath=//label[contains(text(),'Address Line 2')]/following-sibling::input
+CityXpath=//label[contains(text(),'City')]/following-sibling::input
+StateDropDown1Xpath=//label[contains(text(),'State')]/following-sibling::p-dropdown
+StateChoice1Xpath=//label[contains(text(),'State')]/following-sibling::p-dropdown//ul//li[4]
+ZipCodeXpath=//label[contains(text(),'Zip Code')]/following-sibling::input
+ContactNameXpath=//div[@id='providerModalSection']//label[@for='contactName' and @class='ng-star-inserted']/following-sibling::input
+ContactTitleXpath=//input[@id='contactTitle']
+ContactByDropDownXapth=//label[contains(text(),'Contact By')]/following-sibling::p-dropdown//label
+ContactByChoiceXpath=//label[contains(text(),'Contact By')]/following-sibling::p-dropdown//label/following-sibling::div[2]//ul//li[3]
+VerifiedXpath=//label[@class='custom-control custom-check']//span[1]
+####VerifiedXpath=//label[@class='custom-control custom-check']
+PrimaryChoiceXpath=//legend[contains(text(),'Primary')]/following-sibling::div/div[1]
+####PrimaryChoiceXpath=//legend[contains(text(),'Primary')]/following-sibling::div//label[contains(text(),'Yes')]
+SubmitButtonXpath=//button[contains(text(),'Submit')]
+EditButtonFromInitialOutreachXpath=//caption[text()='Provider']/ancestor::div[@class='scrollGrid']//table//tbody//tr[1]//button[@title='Edit']
+ExpandButtonFromInitialOutreachXpath=//caption[text()='Provider']/ancestor::div[@class='scrollGrid']//table//tbody//tr[1]//i
+

@@ -1,0 +1,35 @@
+Provider_xpath = //h2[contains(text(),'Provider')]
+AddProvider_xpath=//button[contains(text(),' Add Provider ')]
+CreateManualProvider=//button[contains(text(),'Create Manual')]
+AddProvider_dropdown_xpath=//label[contains(text(),' Title ')]//parent::nm-input-label//following-sibling::p-dropdown/div
+LicensedClinicalProfessional_xpath=//li//span[contains(text(),'Licensed Clinical Professional Counselor')]
+LicensedClinicalSocial_xpath=//li//span[contains(text(),'Licensed Clinical Social Worker')]
+PhysicianAssistant_xpath=//li//span[contains(text(),'Physician's Assistant')]
+ProviderSpeciality_dropdown=//label[contains(text(),' Provider Specialty ')]//parent::nm-input-label//following-sibling::p-dropdown/div
+ProviderSpeciality_dropdownoptions=//label[contains(text(),' Provider Specialty ')]//parent::nm-input-label//following-sibling::p-dropdown/div//following-sibling::div//li//span
+LicensedMhCounselor=//li//span[contains(text(),'Licensed Mh Counselor')]
+Careteampage=//a[contains(text(),'Care Team')]
+Defaultcareteamrole=//label[contains(text(),'Provider')]
+TitleDrop=(//label[contains(text(),'Please Select...')])[2]//following-sibling::div
+TitleDropOptions=(//label[contains(text(),'Please Select...')])[2]//following-sibling::div//li//span
+ProviderSpecialityDrop=(//label[contains(text(),'Please Select...')])[3]//following-sibling::div
+ProviderSpecDropOptions=(//label[contains(text(),'Please Select...')])[3]//following-sibling::div//li//span
+Initialoutreachpage=//a[text()='Initial Outreach']
+AddProvider=//h2[contains(text(),'Add Provider')]
+EditProvider=(//h3[text()='Provider']//parent::nm-label//following-sibling::nm-card-details//nm-button-group//div[@class='text-sm-right buttonGroup']//button)[1]
+ProviderNametext=//label[contains(text(),' Provider Name ')]//parent::nm-input-label//following-sibling::div//span
+ProviderExpand=(//h3[text()='Provider']//parent::nm-label//following-sibling::nm-card-details//div//button[@title='Select to toggle'])[1]
+Editprovidertext=//h2[contains(text(),'Edit Provider')]
+Cancelbutton=//button[contains(text(),'Cancel')]
+OrganizationName=//label[contains(text(),' Organization Name ')]//parent::nm-input-label//following-sibling::div//span
+AddcareteamMem=//button[contains(text(),' Add Care Team Member ')]
+careteamroledrop=(//label[contains(text(),'Please Select...')])[1]//following-sibling::div
+careteamroleprovider=(//label[contains(text(),'Please Select...')])[1]//following-sibling::div//li//span[text()='Provider']
+searchbutton=//button[contains(text(),'Search')]
+providername=(//span[@class='fieldValue providerName '])[1]
+Addproviderbutton=(//button[@title='Add Provider'])[1]
+SearchFirst=(//input[@id='firstName'])[1]
+SearchLast=(//input[@id='lastName'])[1]
+CareCoordinationPage=//a[text()='Care Coordination']
+EditProviderLabel=//h2[contains(text(),'Edit Provider')]
+
